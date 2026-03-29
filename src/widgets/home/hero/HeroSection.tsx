@@ -1,13 +1,39 @@
 import { Camera, CirclePlay, Send } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import banner from '../../../assets/hero/hero-banner.png';
+import mediaExcavatorMountain from '../../../assets/media-excavator-mountain.jpg';
+import mediaKomatsuTruckSky from '../../../assets/media-komatsu-truck-sky.jpg';
+import mediaOpenMine from '../../../assets/media-open-mine.jpg';
 import { heroContent } from './model/heroContent';
 
 export const HeroSection = () => {
+  const heroSlides = [banner, mediaExcavatorMountain, mediaOpenMine, mediaKomatsuTruckSky];
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  useEffect(() => {
+    const intervalId = window.setInterval(() => {
+      setActiveSlide((currentSlide) => (currentSlide + 1) % heroSlides.length);
+    }, 4500);
+
+    return () => window.clearInterval(intervalId);
+  }, [heroSlides.length]);
+
   return (
-    <section
-      className="relative min-h-[382px] w-full overflow-hidden border-b-2 border-[#0f5db8] bg-cover bg-center bg-no-repeat sm:min-h-[430px] lg:min-h-[500px]"
-      style={{ backgroundImage: `url(${banner})` }}
-    >
+    <section className="relative min-h-[382px] w-full overflow-hidden border-b-2 border-[#0f5db8] sm:min-h-[430px] lg:min-h-[500px]">
+      <div className="absolute inset-0">
+        {heroSlides.map((slide, index) => (
+          <img
+            key={slide}
+            src={slide}
+            alt=""
+            aria-hidden="true"
+            className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-700 ${
+              activeSlide === index ? 'opacity-100' : 'opacity-0'
+            }`}
+          />
+        ))}
+      </div>
+
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,10,14,0.83)_0%,rgba(8,10,14,0.6)_26%,rgba(8,10,14,0.18)_56%,rgba(8,10,14,0.2)_100%)]"></div>
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,17,29,0.22)_0%,rgba(8,17,29,0.08)_34%,rgba(8,17,29,0.38)_100%)]"></div>
 
@@ -57,19 +83,20 @@ export const HeroSection = () => {
       </div>
 
       <div className="absolute bottom-[15px] left-1/2 z-10 flex -translate-x-1/2 items-center gap-[6px]">
-        {Array.from({ length: heroContent.slides }, (_, index) => {
-          const isActive = index === heroContent.activeSlide - 1;
+        {heroSlides.map((_, index) => {
+          const isActive = index === activeSlide;
 
           return (
             <button
               key={index}
               aria-label={`Slide ${index + 1}`}
+              onClick={() => setActiveSlide(index)}
               className={
                 isActive
                   ? 'h-[4px] w-[24px] rounded-full bg-white'
                   : 'h-[4px] w-[14px] rounded-full bg-white/35 transition-colors hover:bg-white/65'
               }
-            ></button>
+            />
           );
         })}
       </div>

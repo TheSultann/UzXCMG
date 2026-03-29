@@ -14,6 +14,4 @@ export const heroContent = {
     label: "Bog'lanish",
     href: '/#contact',
   },
-  slides: 4,
-  activeSlide: 2,
 } as const;

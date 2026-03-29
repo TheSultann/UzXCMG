@@ -1,11 +1,11 @@
 import { Play } from 'lucide-react'
 import { SectionTitle } from '../components/SectionTitle'
-import heroBanner from '../assets/hero/hero-banner.png'
+import videoStageThumbnail from '../assets/video-stage-thumbnail.png'
 
 const videos = Array.from({ length: 6 }, (_, index) => ({
   id: `${index + 1}`,
   title: "XCMG va Fortescue dunyodagi eng yirik elektr kon uskunalari prototiplarini ishga tushirdilar",
-  thumbnail: heroBanner,
+  thumbnail: videoStageThumbnail,
 }))
 
 export const VideoPage = () => {

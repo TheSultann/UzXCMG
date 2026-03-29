@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { PageHeroBanner } from '../components/PageHeroBanner'
 import { SectionTitle } from '../components/SectionTitle'
 
-import heroBanner from '../assets/hero/hero-banner.png'
+import certificateTemplate from '../assets/certificate-template.png'
 
 const tabs = [
   { id: 'certificates', label: 'Xalqaro sertifikatlar' },
@@ -12,7 +12,7 @@ const tabs = [
 
 const dummyCerts = Array.from({ length: 8 }, (_, i) => ({
   id: i,
-  image: heroBanner,
+  image: certificateTemplate,
   date: '1900 yil, oktabr',
   title: "Xalqaro ISO 9001:1994 sertifikatining qo'lga kiritilishi.",
 }))
@@ -58,14 +58,8 @@ export const CertificatesPage = () => {
                         <img
                           src={cert.image}
                           alt={cert.title}
-                          className="absolute left-0 top-0 h-full w-full object-cover opacity-80"
+                          className="absolute left-0 top-0 h-full w-full object-cover"
                         />
-                        <div className="absolute inset-0 flex flex-col items-center justify-center p-[20px]">
-                          <div className="w-[80%] border-b-2 border-[#d4af37] pb-2 text-[18px] font-serif font-bold text-[#333]">
-                            CERTIFICATE
-                          </div>
-                          <div className="mt-2 text-[10px] uppercase text-[#666]">of achievement</div>
-                        </div>
                       </div>
                     </div>
                     <div className="w-full text-left">

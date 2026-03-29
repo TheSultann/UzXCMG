@@ -2,11 +2,9 @@ import { Clock3, MapPin, Phone } from 'lucide-react';
 import { PageHeroBanner } from '../../shared/ui/PageHeroBanner';
 import { SectionTitle } from '../../shared/ui/SectionTitle';
 
-import excavators from '../../assets/product-categories/excavators.png';
-import loaders from '../../assets/product-categories/loaders.png';
-import bulldozers from '../../assets/product-categories/bulldozers-graders.png';
+import serviceCenterWorkshop from '../../assets/service-center-workshop.jpg';
 
-const images = [excavators, loaders, bulldozers, excavators];
+const images = Array.from({ length: 4 }, () => serviceCenterWorkshop);
 
 const serviceCenters = Array.from({ length: 4 }, (_, i) => ({
   id: `center-${i + 1}`,

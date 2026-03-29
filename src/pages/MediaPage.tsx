@@ -1,68 +1,70 @@
 import { PageHeroBanner } from '../components/PageHeroBanner'
 import { SectionTitle } from '../components/SectionTitle'
 
-import excavators from '../assets/product-categories/excavators.png'
-import bulldozersGraders from '../assets/product-categories/bulldozers-graders.png'
-import miningEquipment from '../assets/product-categories/mining-equipment.png'
-import roadConstruction from '../assets/product-categories/road-construction-equipment.png'
-import heroBanner from '../assets/hero/hero-banner.png'
+import mediaDumpTruckLeft from '../assets/media-dump-truck-left.jpg'
+import mediaExcavatorMountain from '../assets/media-excavator-mountain.jpg'
+import mediaOpenMine from '../assets/media-open-mine.jpg'
+import mediaDumpTruckRight from '../assets/media-dump-truck-right.jpg'
+import mediaKomatsuHill from '../assets/media-komatsu-hill.jpg'
+import mediaBackhoeBucket from '../assets/media-backhoe-bucket.jpg'
+import mediaKomatsuTruckSky from '../assets/media-komatsu-truck-sky.jpg'
 
 const mediaImages = [
   {
     id: 1,
-    src: roadConstruction,
-    alt: "Yo'l qurilish texnikasi",
-    imageClass: 'object-contain p-[14px]',
-    frameClass: 'bg-[linear-gradient(180deg,#e9f1f9_0%,#f5f8fb_100%)]',
+    src: mediaDumpTruckLeft,
+    alt: 'Karyer samosvali',
+    imageClass: 'object-cover',
+    frameClass: 'bg-white',
   },
   {
     id: 2,
-    src: heroBanner,
+    src: mediaExcavatorMountain,
     alt: 'Ekskavator tabiat fonida',
     imageClass: 'object-cover',
-    frameClass: '',
+    frameClass: 'bg-white',
   },
   {
     id: 3,
-    src: heroBanner,
+    src: mediaOpenMine,
     alt: 'Kon maydonidagi texnika',
-    imageClass: 'object-cover object-right',
-    frameClass: '',
+    imageClass: 'object-cover',
+    frameClass: 'bg-white',
   },
   {
     id: 4,
-    src: roadConstruction,
+    src: mediaDumpTruckRight,
     alt: 'Karyer samosvali',
-    imageClass: 'object-contain p-[14px]',
-    frameClass: 'bg-[linear-gradient(180deg,#edf3f8_0%,#f8fbfd_100%)]',
+    imageClass: 'object-cover',
+    frameClass: 'bg-white',
   },
   {
     id: 5,
-    src: excavators,
-    alt: 'Ekskavator',
-    imageClass: 'object-contain p-[16px]',
-    frameClass: 'bg-[linear-gradient(180deg,#eef5fb_0%,#f9fbfd_100%)]',
+    src: mediaKomatsuHill,
+    alt: 'Ekskavator tepada',
+    imageClass: 'object-cover',
+    frameClass: 'bg-white',
   },
   {
     id: 6,
-    src: bulldozersGraders,
-    alt: 'Buldozer va greyder',
-    imageClass: 'object-contain p-[14px]',
-    frameClass: 'bg-[linear-gradient(180deg,#f4f1ec_0%,#fbf9f6_100%)]',
+    src: mediaBackhoeBucket,
+    alt: 'Orqa kovlagich',
+    imageClass: 'object-cover',
+    frameClass: 'bg-white',
   },
   {
     id: 7,
-    src: miningEquipment,
-    alt: 'Kon texnikasi',
-    imageClass: 'object-contain p-[14px]',
-    frameClass: 'bg-[linear-gradient(180deg,#eef5fb_0%,#ffffff_100%)]',
+    src: mediaKomatsuTruckSky,
+    alt: 'Katta samosval',
+    imageClass: 'object-cover',
+    frameClass: 'bg-white',
   },
   {
     id: 8,
-    src: excavators,
-    alt: 'Ekskavator ishda',
-    imageClass: 'object-contain p-[16px]',
-    frameClass: 'bg-[linear-gradient(180deg,#edf4fa_0%,#f8fbfd_100%)]',
+    src: mediaKomatsuHill,
+    alt: 'Ekskavator tepada',
+    imageClass: 'object-cover',
+    frameClass: 'bg-white',
   },
 ] as const
 

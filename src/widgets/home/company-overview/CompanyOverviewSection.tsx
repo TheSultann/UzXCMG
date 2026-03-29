@@ -1,5 +1,5 @@
 import { Boxes, Globe2, Truck, Users } from 'lucide-react';
-import banner from '../../../assets/hero/hero-banner.png';
+import banner from '../../../assets/company-overview-building.jpg';
 import lineBackground from '../../../assets/Line.png';
 
 const stats = [
@@ -12,16 +12,16 @@ const stats = [
 export const CompanyOverviewSection = () => {
   return (
     <section id="about" className="relative overflow-hidden bg-[#111111] py-10 text-white">
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(17,17,17,0.82)_0%,rgba(17,17,17,0.84)_100%)]" />
       <div
-        className="pointer-events-none absolute inset-0 opacity-30 mix-blend-screen"
+        className="pointer-events-none absolute left-1/2 top-[-105px] h-[1144px] w-[1924px] -translate-x-1/2 opacity-[0.28] mix-blend-screen"
         style={{
-          backgroundImage: `url(${lineBackground})`,
+          backgroundImage: `radial-gradient(circle at center, rgba(255,255,255,0.24) 0%, rgba(255,255,255,0) 72%), url(${lineBackground})`,
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}
       />
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.04),transparent_45%),linear-gradient(180deg,rgba(17,17,17,0.82)_0%,rgba(17,17,17,0.86)_100%)]" />
 
       <div className="relative z-10 mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
         <div className="mb-4 flex items-center gap-2">

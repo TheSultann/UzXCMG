@@ -1,5 +1,5 @@
 import { Clock3 } from 'lucide-react';
-import banner from '../../../assets/hero/hero-banner.png';
+import banner from '../../../assets/news-banner.png';
 import { newsItems } from '../../../shared/config/news';
 
 type NewsFeedSectionProps = {
