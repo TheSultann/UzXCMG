@@ -1,0 +1,53 @@
+import { Briefcase, Hexagon, Wrench } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { PageHeroBanner } from '../../shared/ui/PageHeroBanner';
+import { SectionTitle } from '../../shared/ui/SectionTitle';
+
+export const ServicePage = () => {
+  return (
+    <>
+      <PageHeroBanner title="SERVIS" />
+
+      <section className="bg-white py-[42px]">
+        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+          <SectionTitle>Servis</SectionTitle>
+
+          <div className="grid grid-cols-1 gap-[16px] md:grid-cols-3 md:gap-[24px]">
+            {/* Service Centers Box */}
+            <Link
+              to="/service/centers"
+              className="group flex min-h-[220px] flex-col justify-between border-2 border-transparent bg-[#efefef] p-[24px] transition-all hover:border-[#0f5db8] hover:bg-[#e8e8e8]"
+            >
+              <h3 className="text-[18px] font-semibold text-[#222222]">Servis markazlari</h3>
+              <div className="flex justify-end">
+                <Wrench className="h-[64px] w-[64px] text-[#333333] transition-transform group-hover:scale-110" strokeWidth={1.5} />
+              </div>
+            </Link>
+
+            {/* Spare Parts Box */}
+            <Link
+              to="/service"
+              className="group flex min-h-[220px] flex-col justify-between border-2 border-[#0088ff] bg-[#efefef] p-[24px] transition-all hover:bg-[#e8e8e8]"
+            >
+              <h3 className="text-[18px] font-semibold text-[#222222]">Ehtiyot qismlar</h3>
+              <div className="flex justify-end">
+                <Hexagon className="h-[64px] w-[64px] text-[#333333] transition-transform group-hover:scale-110" strokeWidth={1.5} />
+              </div>
+            </Link>
+
+            {/* Maintenance Box */}
+            <Link
+              to="/service"
+              className="group flex min-h-[220px] flex-col justify-between border-2 border-transparent bg-[#efefef] p-[24px] transition-all hover:border-[#0f5db8] hover:bg-[#e8e8e8]"
+            >
+              <h3 className="text-[18px] font-semibold text-[#222222]">Xizmat ko'rsatish</h3>
+              <div className="flex justify-end">
+                <Briefcase className="h-[64px] w-[64px] text-[#333333] transition-transform group-hover:scale-110" strokeWidth={1.5} />
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};

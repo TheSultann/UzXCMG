@@ -1,0 +1,78 @@
+import { Camera, CirclePlay, Send } from 'lucide-react';
+import banner from '../../../assets/hero/hero-banner.png';
+import { heroContent } from './model/heroContent';
+
+export const HeroSection = () => {
+  return (
+    <section
+      className="relative min-h-[382px] w-full overflow-hidden border-b-2 border-[#0f5db8] bg-cover bg-center bg-no-repeat sm:min-h-[430px] lg:min-h-[500px]"
+      style={{ backgroundImage: `url(${banner})` }}
+    >
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(8,10,14,0.83)_0%,rgba(8,10,14,0.6)_26%,rgba(8,10,14,0.18)_56%,rgba(8,10,14,0.2)_100%)]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(8,17,29,0.22)_0%,rgba(8,17,29,0.08)_34%,rgba(8,17,29,0.38)_100%)]"></div>
+
+      <div className="relative z-10 mx-auto h-full w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="flex min-h-[382px] items-center py-[34px] sm:min-h-[430px] sm:py-[40px] lg:min-h-[500px] lg:py-[46px]">
+          <div className="max-w-[640px] pl-[10px] sm:pl-[14px] lg:pl-[8px]">
+            <h1 className="font-display mb-[18px] max-w-[760px] text-[44px] leading-[0.95] font-black uppercase tracking-[-2.2px] text-white sm:text-[54px] lg:text-[56px] xl:text-[58px]">
+              {heroContent.titleLines.map((line) => (
+                <span key={line} className="block">
+                  {line}
+                </span>
+              ))}
+            </h1>
+
+            <p className="mb-[18px] max-w-[510px] text-[11px] leading-[1.6] font-normal text-white/84 sm:text-[12px]">
+              {heroContent.description}
+            </p>
+
+            <div className="flex flex-wrap items-center gap-[10px]">
+              <a
+                href={heroContent.primaryAction.href}
+                className="inline-flex h-[40px] items-center justify-center bg-[#f3c316] px-[18px] text-[11px] font-semibold text-black transition-colors hover:bg-[#ffd42b]"
+              >
+                {heroContent.primaryAction.label}
+              </a>
+              <a
+                href={heroContent.secondaryAction.href}
+                className="inline-flex h-[40px] items-center justify-center border border-white/55 bg-black/18 px-[18px] text-[11px] font-medium text-white transition-colors hover:bg-white/10"
+              >
+                {heroContent.secondaryAction.label}
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="absolute right-[20px] top-1/2 z-10 hidden -translate-y-1/2 flex-col gap-[11px] text-white/85 lg:flex">
+        <a href="#instagram" aria-label="Instagram" className="transition-colors hover:text-white">
+          <Camera className="h-[12px] w-[12px]" strokeWidth={1.85} />
+        </a>
+        <a href="#telegram" aria-label="Telegram" className="transition-colors hover:text-white">
+          <Send className="h-[12px] w-[12px]" strokeWidth={1.85} />
+        </a>
+        <a href="#youtube" aria-label="YouTube" className="transition-colors hover:text-white">
+          <CirclePlay className="h-[12px] w-[12px]" strokeWidth={1.85} />
+        </a>
+      </div>
+
+      <div className="absolute bottom-[15px] left-1/2 z-10 flex -translate-x-1/2 items-center gap-[6px]">
+        {Array.from({ length: heroContent.slides }, (_, index) => {
+          const isActive = index === heroContent.activeSlide - 1;
+
+          return (
+            <button
+              key={index}
+              aria-label={`Slide ${index + 1}`}
+              className={
+                isActive
+                  ? 'h-[4px] w-[24px] rounded-full bg-white'
+                  : 'h-[4px] w-[14px] rounded-full bg-white/35 transition-colors hover:bg-white/65'
+              }
+            ></button>
+          );
+        })}
+      </div>
+    </section>
+  );
+};
