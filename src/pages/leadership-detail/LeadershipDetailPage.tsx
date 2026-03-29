@@ -1,0 +1,1 @@
+export { LeadershipDetailPage } from '../LeadershipDetailPage';
