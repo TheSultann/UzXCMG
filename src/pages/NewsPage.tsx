@@ -96,15 +96,15 @@ export const NewsPage = () => {
           <SectionTitle>Yangiliklar</SectionTitle>
 
           <div className="mb-[12px] grid items-start gap-[8px] lg:grid-cols-[1.06fr_0.94fr]">
-            <div className="overflow-hidden border border-black/5 bg-[#f1f1f1] shadow-[0_18px_36px_rgba(17,17,17,0.06)]">
+            <div className="overflow-hidden border border-black/5 bg-[#f1f1f1] shadow-[0_18px_36px_rgba(17,17,17,0.06)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_44px_rgba(17,17,17,0.1)]">
               <img
                 src={featuredImage}
                 alt={featuredArticle.title}
-                className="h-[210px] w-full object-cover md:h-[255px]"
+                className="h-[210px] w-full object-cover transition-transform duration-500 hover:scale-[1.04] md:h-[255px]"
               />
             </div>
 
-            <div className="border border-black/5 bg-white p-[18px] shadow-[0_18px_36px_rgba(17,17,17,0.04)]">
+            <div className="border border-black/5 bg-white p-[18px] shadow-[0_18px_36px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_44px_rgba(17,17,17,0.08)]">
               <h3 className="mb-[10px] text-[22px] leading-[1.18] font-bold text-[#303030]">
                 {featuredArticle.title}
               </h3>

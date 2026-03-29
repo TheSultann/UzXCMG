@@ -13,6 +13,8 @@ import { LeadershipDetailPage } from '../../pages/leadership-detail/LeadershipDe
 import { CertificatesPage } from '../../pages/certificates/CertificatesPage';
 import { ServicePage } from '../../pages/service/ServicePage';
 import { ServiceCentersPage } from '../../pages/service-centers/ServiceCentersPage';
+import { SparePartsPage } from '../../pages/spare-parts/SparePartsPage';
+import { ServiceMaintenancePage } from '../../pages/service-maintenance/ServiceMaintenancePage';
 
 export type AppRoute = {
   path: string;
@@ -35,4 +37,6 @@ export const routes: AppRoute[] = [
   { path: '/certificates', component: CertificatesPage, title: 'Sertifikatlar' },
   { path: '/service', component: ServicePage, title: 'Servis' },
   { path: '/service/centers', component: ServiceCentersPage, title: 'Servis markazlari' },
+  { path: '/service/spare-parts', component: SparePartsPage, title: 'Ehtiyot qismlar' },
+  { path: '/service/maintenance', component: ServiceMaintenancePage, title: "Xizmat ko'rsatish" },
 ];

@@ -26,7 +26,7 @@ export const ServicePage = () => {
 
             {/* Spare Parts Box */}
             <Link
-              to="/service"
+              to="/service/spare-parts"
               className="group flex min-h-[220px] flex-col justify-between border-2 border-[#0088ff] bg-[#efefef] p-[24px] transition-all hover:bg-[#e8e8e8]"
             >
               <h3 className="text-[18px] font-semibold text-[#222222]">Ehtiyot qismlar</h3>
@@ -37,7 +37,7 @@ export const ServicePage = () => {
 
             {/* Maintenance Box */}
             <Link
-              to="/service"
+              to="/service/maintenance"
               className="group flex min-h-[220px] flex-col justify-between border-2 border-transparent bg-[#efefef] p-[24px] transition-all hover:border-[#0f5db8] hover:bg-[#e8e8e8]"
             >
               <h3 className="text-[18px] font-semibold text-[#222222]">Xizmat ko'rsatish</h3>

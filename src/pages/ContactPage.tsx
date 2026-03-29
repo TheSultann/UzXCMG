@@ -61,7 +61,7 @@ export const ContactPage = () => {
           <SectionTitle>Aloqa</SectionTitle>
 
           <div className="mb-[32px] grid gap-[24px] lg:grid-cols-2">
-            <div className="space-y-[24px] border border-black/5 bg-white p-[22px] shadow-[0_18px_36px_rgba(17,17,17,0.05)]">
+            <div className="space-y-[24px] border border-black/5 bg-white p-[22px] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.1)]">
               {contactSections.map((section) => (
                 <div key={section.title}>
                   <h3 className="mb-[10px] text-[15px] font-bold text-[#222222]">{section.title}</h3>
@@ -80,11 +80,11 @@ export const ContactPage = () => {
               ))}
             </div>
 
-            <div className="border border-black/5 bg-white p-[22px] shadow-[0_18px_36px_rgba(17,17,17,0.05)]">
+            <div className="border border-black/5 bg-white p-[22px] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.1)]">
               <h3 className="mb-[16px] text-[18px] font-bold text-[#222222]">Diller va Distribyutorlar</h3>
               <div className="space-y-[20px]">
                 {dealers.map((dealer) => (
-                  <div key={dealer.name} className="border-b border-[#eeeeee] pb-[16px]">
+                  <div key={dealer.name} className="border-b border-[#eeeeee] pb-[16px] transition-transform duration-300 hover:translate-x-[2px]">
                     <h4 className="mb-[6px] text-[14px] font-semibold text-[#333333]">{dealer.name}</h4>
                     <p className="mb-[4px] flex items-center gap-[6px] text-[12px] text-[#666666]">
                       <MapPin className="h-[12px] w-[12px] shrink-0 text-[#0f5db8]" strokeWidth={1.8} />
@@ -118,15 +118,15 @@ export const ContactPage = () => {
           </div>
 
           <div className="grid gap-[16px] lg:grid-cols-2">
-            <div className="relative min-h-[300px] overflow-hidden border border-black/5 bg-[#e8e8e8] shadow-[0_18px_36px_rgba(17,17,17,0.05)]">
+            <div className="relative min-h-[300px] overflow-hidden border border-black/5 bg-[#e8e8e8] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.1)]">
               <img
                 src={heroBanner}
                 alt="Korxona binosi"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.04]"
               />
             </div>
 
-            <div className="border border-black/5 bg-[#f8f8f8] px-[24px] py-[20px] shadow-[0_18px_36px_rgba(17,17,17,0.05)]">
+            <div className="border border-black/5 bg-[#f8f8f8] px-[24px] py-[20px] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.1)]">
               <form className="space-y-[12px]">
                 <label className="relative block">
                   <User className="pointer-events-none absolute left-[10px] top-1/2 h-[14px] w-[14px] -translate-y-1/2 text-[#8a8a8a]" />
@@ -165,7 +165,7 @@ export const ContactPage = () => {
             </div>
           </div>
 
-          <div className="mt-[16px] h-[300px] overflow-hidden border border-black/5 bg-[#d9ddd8] shadow-[0_18px_36px_rgba(17,17,17,0.05)]">
+          <div className="mt-[16px] h-[300px] overflow-hidden border border-black/5 bg-[#d9ddd8] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.1)]">
             <div className="relative h-full w-full bg-[linear-gradient(0deg,rgba(200,210,200,0.4)_1px,transparent_1px),linear-gradient(90deg,rgba(200,210,200,0.4)_1px,transparent_1px)] bg-[size:40px_40px]">
               <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center">
                 <MapPin className="h-[40px] w-[40px] text-[#db3e35]" fill="#db3e35" />

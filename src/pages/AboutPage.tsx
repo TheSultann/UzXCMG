@@ -59,15 +59,15 @@ export const AboutPage = () => {
           </div>
 
           <div className="grid gap-4 xl:grid-cols-[1.25fr_0.78fr_1fr]">
-            <div className="min-h-[240px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-[8px] max-xl:min-h-[320px]">
+            <div className="min-h-[240px] overflow-hidden border border-white/10 bg-white/5 backdrop-blur-[8px] shadow-[0_22px_48px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_28px_58px_rgba(0,0,0,0.26)] max-xl:min-h-[320px]">
               <img
                 src={heroBanner}
                 alt="UzXCMG ishlab chiqarish maydoni"
-                className="block h-full w-full object-cover"
+                className="block h-full w-full object-cover transition-transform duration-500 hover:scale-[1.04]"
               />
             </div>
 
-            <article className="border border-white/10 bg-white/5 p-5 backdrop-blur-[8px]">
+            <article className="border border-white/10 bg-white/5 p-5 backdrop-blur-[8px] shadow-[0_20px_42px_rgba(0,0,0,0.16)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_26px_54px_rgba(0,0,0,0.24)]">
               <h3 className="text-base leading-[1.45] font-semibold">
                 Orta Osiyoda yagona bo&apos;lgan maxsus texnikalarni ishlab chiquvchi qo&apos;shma korxona
               </h3>
@@ -88,9 +88,9 @@ export const AboutPage = () => {
                 return (
                   <article
                     key={item.label}
-                    className="flex min-h-[112px] flex-col justify-center border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-[8px]"
+                    className="group flex min-h-[112px] flex-col justify-center border border-white/10 bg-white/5 px-5 py-4 backdrop-blur-[8px] transition-all duration-300 hover:-translate-y-[4px] hover:bg-white/[0.08] hover:shadow-[0_18px_36px_rgba(0,0,0,0.2)]"
                   >
-                    <Icon className="mb-3 h-7 w-7" aria-hidden="true" strokeWidth={1.8} />
+                    <Icon className="mb-3 h-7 w-7 transition-transform duration-300 group-hover:scale-110" aria-hidden="true" strokeWidth={1.8} />
                     <p className="text-[1.75rem] leading-none font-bold text-[#f3c316]">{item.value}</p>
                     <p className="mt-2 text-[0.78rem] text-white/75">{item.label}</p>
                   </article>
@@ -127,7 +127,7 @@ export const AboutPage = () => {
                     index % 2 === 0
                       ? 'md:col-start-1 md:text-right'
                       : 'md:col-start-3'
-                  }`}
+                  } transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_24px_54px_rgba(23,23,23,0.12)]`}
                 >
                   <h3 className="mb-3 text-[1.2rem] font-bold">{event.title}</h3>
                   <p className="text-[0.92rem] leading-[1.8] text-[#676767]">{event.description}</p>
