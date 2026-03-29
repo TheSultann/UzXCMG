@@ -1,11 +1,11 @@
 import { Play } from 'lucide-react'
 import { SectionTitle } from '../components/SectionTitle'
-import heroBanner from '../assets/hero/hero-banner.png'
+import videoStageThumbnail from '../assets/video-stage-thumbnail.png'
 
 const videos = Array.from({ length: 6 }, (_, index) => ({
   id: `${index + 1}`,
   title: "XCMG va Fortescue dunyodagi eng yirik elektr kon uskunalari prototiplarini ishga tushirdilar",
-  thumbnail: heroBanner,
+  thumbnail: videoStageThumbnail,
 }))
 
 export const VideoPage = () => {
@@ -30,7 +30,7 @@ export const VideoPage = () => {
                 <div className="absolute inset-0 bg-black/38 transition-colors group-hover:bg-black/44" />
 
                 <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center">
-                  <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white shadow-sm transition-transform group-hover:scale-110">
+                  <div className="flex h-[34px] w-[34px] items-center justify-center rounded-full bg-white shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_10px_18px_rgba(255,255,255,0.26)]">
                     <Play
                       className="ml-[2px] h-[14px] w-[14px] text-[#222222]"
                       fill="#222222"
@@ -40,7 +40,7 @@ export const VideoPage = () => {
                 </div>
 
                 <div className="absolute inset-x-[10px] bottom-[10px]">
-                  <p className="text-[11px] leading-[1.35] font-medium text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)]">
+                  <p className="text-[11px] leading-[1.35] font-medium text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:translate-y-[-1px]">
                     {video.title}
                   </p>
                 </div>

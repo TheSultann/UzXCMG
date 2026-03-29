@@ -2,14 +2,13 @@ import { Clock3 } from 'lucide-react'
 import { PageHeroBanner } from '../components/PageHeroBanner'
 import { SectionTitle } from '../components/SectionTitle'
 
-import heroBanner from '../assets/hero/hero-banner.png'
-import excavators from '../assets/product-categories/excavators.png'
-import loaders from '../assets/product-categories/loaders.png'
-import bulldozersGraders from '../assets/product-categories/bulldozers-graders.png'
-import miningEquipment from '../assets/product-categories/mining-equipment.png'
-import roadConstruction from '../assets/product-categories/road-construction-equipment.png'
+import newsBanner from '../assets/news-banner.png'
+import newsFeaturedPort from '../assets/news-featured-port.png'
+import newsCardTrucks from '../assets/news-card-trucks.png'
+import newsCardTractors from '../assets/news-card-tractors.png'
+import newsCardGreenTruck from '../assets/news-card-green-truck.png'
 
-const featuredImage = heroBanner
+const featuredImage = newsFeaturedPort
 
 const featuredArticle = {
   title: "Dunyodagi eng katta port XCMG ning asosiy uskunalaridan foydalanadi!",
@@ -22,67 +21,69 @@ const newsArticles = [
     id: '1',
     title:
       "2026-yiga textor start | XCM5 materiallarini oqish bitilish uskunalarni global miqyosda yetkazib beruvchiga va xaridiy safi tirlash..",
-    date: '01.02.2026',
+    date: '12.02.2026',
     excerpt:
       "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue kompaniyasining bosh direktori bilan uchrashdi jami Polat va...",
-    image: excavators,
+    image: newsCardTrucks,
   },
   {
     id: '2',
     title:
       "2026-yil uchun atayib boshlanishi XCMG qatrang yo'lajis mashinalari Janubiy Amerikda bosqivzar yenilar kini foriq ko'rinishido",
-    date: '01.02.2026',
+    date: '12.02.2026',
     excerpt:
       "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue kompaniyasining bosh direktori bilan uchrashdi jami Polat va...",
-    image: loaders,
+    image: newsCardTractors,
   },
   {
     id: '3',
     title: "2026-yil uchun atayib boshlanishi XCMG Mining Machinery bulan dunyo bo'ylab kertilings yiri'l chokid",
-    date: '01.02.2026',
+    date: '12.02.2026',
     excerpt:
       "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue kompaniyasining bosh direktori bilan uchrashdi jami Polat va...",
-    image: bulldozersGraders,
+    image: newsCardGreenTruck,
   },
   {
     id: '4',
     title: "XCMG va Fortescue dunyodagi eng yirik elektr kon uskunalari prototiplarini ishga tushirdi",
-    date: '01.02.2026',
+    date: '12.02.2026',
     excerpt:
       "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue kompaniyasining bosh direktori bilan uchrashdi jami Polat va...",
-    image: miningEquipment,
+    image: newsBanner,
   },
   {
     id: '5',
-    title: "2026-yiga textor start | XCM5 materiallarini global miqyosda yetkazib beruvchiga...",
-    date: '01.02.2026',
+    title:
+      "2026-yiga textor start | XCM5 materiallarini oqish bitilish uskunalarni global miqyosda yetkazib beruvchiga va xaridiy safi tirlash..",
+    date: '12.02.2026',
     excerpt:
       "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue kompaniyasining bosh direktori bilan uchrashdi jami Polat va...",
-    image: roadConstruction,
+    image: newsCardTrucks,
   },
   {
     id: '6',
-    title: "2026-yil uchun atayib boshlanishi XCMG Mining Machinery bulan dunyo bo'ylab...",
-    date: '01.02.2026',
+    title:
+      "2026-yil uchun atayib boshlanishi XCMG qatrang yo'lajis mashinalari Janubiy Amerikda bosqivzar yenilar kini foriq ko'rinishido",
+    date: '12.02.2026',
     excerpt:
-      "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni kompaniyasining bosh direktori bilan uchrashdi...",
-    image: excavators,
+      "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue kompaniyasining bosh direktori bilan uchrashdi jami Polat va...",
+    image: newsCardTractors,
   },
   {
     id: '7',
-    title: "2026-yil uchun XCMG Mining Machinery bulan dunyo bo'ylab kertishling...",
-    date: '01.02.2026',
+    title: "2026-yil uchun atayib boshlanishi XCMG Mining Machinery bulan dunyo bo'ylab kertilings yiri'l chokid",
+    date: '12.02.2026',
     excerpt:
-      "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue...",
-    image: loaders,
+      "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue kompaniyasining bosh direktori bilan uchrashdi jami Polat va...",
+    image: newsCardGreenTruck,
   },
   {
     id: '8',
-    title: "XCMG va Fortescue dunyodagi eng yirik elektr kon uskunalari prototiplayirini...",
-    date: '01.02.2026',
+    title: "XCMG va Fortescue dunyodagi eng yirik elektr kon uskunalari prototiplarini ishga tushirdi",
+    date: '12.02.2026',
     excerpt:
-      "XCMG Yangiliklari | 2026 yil 5-fevral kuni XCMG Group Fortescue kompaniyasning bosh direktori bilan uchrashdi...",
-    image: heroBanner,
+      "XCMG Yangiliklari | 2026 yil 5-fevral Sun'iy o'lchami 3-fevral kuni XCMG Group Fortescue kompaniyasining bosh direktori bilan uchrashdi jami Polat va...",
+    image: newsBanner,
   },
 ] as const
 
@@ -96,15 +97,15 @@ export const NewsPage = () => {
           <SectionTitle>Yangiliklar</SectionTitle>
 
           <div className="mb-[12px] grid items-start gap-[8px] lg:grid-cols-[1.06fr_0.94fr]">
-            <div className="overflow-hidden border border-black/5 bg-[#f1f1f1] shadow-[0_18px_36px_rgba(17,17,17,0.06)]">
+            <div className="overflow-hidden border border-black/5 bg-[#f1f1f1] shadow-[0_18px_36px_rgba(17,17,17,0.06)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_44px_rgba(17,17,17,0.1)]">
               <img
                 src={featuredImage}
                 alt={featuredArticle.title}
-                className="h-[210px] w-full object-cover md:h-[255px]"
+                className="h-[210px] w-full object-cover transition-transform duration-500 hover:scale-[1.04] md:h-[255px]"
               />
             </div>
 
-            <div className="border border-black/5 bg-white p-[18px] shadow-[0_18px_36px_rgba(17,17,17,0.04)]">
+            <div className="border border-black/5 bg-white p-[18px] shadow-[0_18px_36px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_44px_rgba(17,17,17,0.08)]">
               <h3 className="mb-[10px] text-[22px] leading-[1.18] font-bold text-[#303030]">
                 {featuredArticle.title}
               </h3>

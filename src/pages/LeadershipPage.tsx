@@ -17,13 +17,13 @@ export const LeadershipPage = () => {
             {leaders.map((leader) => (
               <div
                 key={leader.id}
-                className="flex min-h-[152px] items-start gap-[10px] border border-black/5 bg-[#ececec] p-[14px] shadow-[0_14px_32px_rgba(17,17,17,0.06)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_18px_38px_rgba(17,17,17,0.1)]"
+                className="group flex min-h-[152px] items-start gap-[10px] border border-black/5 bg-[#ececec] p-[14px] shadow-[0_14px_32px_rgba(17,17,17,0.06)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_20px_42px_rgba(17,17,17,0.12)]"
               >
                 <div className="h-[127px] w-[127px] shrink-0 overflow-hidden bg-[#d8d8d8]">
                   <img
                     src={leader.image}
                     alt={leader.name}
-                    className="h-full w-full object-cover"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
                   />
                 </div>
 
@@ -39,7 +39,7 @@ export const LeadershipPage = () => {
 
                   <Link
                     to={`/leadership/${leader.id}`}
-                    className="inline-flex h-[30px] items-center justify-center bg-[#313131] px-[14px] text-[10px] font-medium text-white transition-colors hover:bg-[#202020]"
+                    className="inline-flex h-[30px] items-center justify-center bg-[#313131] px-[14px] text-[10px] font-medium text-white transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#202020] hover:shadow-[0_10px_18px_rgba(49,49,49,0.24)]"
                   >
                     Biografiya bilan tanishish
                   </Link>

@@ -25,8 +25,8 @@ export const navigationItems: NavigationItem[] = [
     href: '/service',
     children: [
       { label: 'Servis markazlari', href: '/service/centers' },
-      { label: 'Ehtiyot qismlar', href: '/service' },
-      { label: "Xizmat ko'rsatish", href: '/service' },
+      { label: 'Ehtiyot qismlar', href: '/service/spare-parts' },
+      { label: "Xizmat ko'rsatish", href: '/service/maintenance' },
     ],
   },
   { label: 'Yangiliklar', href: '/news' },
