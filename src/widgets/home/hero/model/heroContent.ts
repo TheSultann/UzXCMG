@@ -12,6 +12,6 @@ export const heroContent = {
   },
   secondaryAction: {
     label: "Bog'lanish",
-    href: '/#contact',
+    href: '#contact',
   },
 } as const;

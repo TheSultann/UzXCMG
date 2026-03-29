@@ -1,5 +1,6 @@
 import { Camera, CirclePlay, Send } from 'lucide-react';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import banner from '../../../assets/hero/hero-banner.png';
 import mediaExcavatorMountain from '../../../assets/media-excavator-mountain.jpg';
 import mediaKomatsuTruckSky from '../../../assets/media-komatsu-truck-sky.jpg';
@@ -53,15 +54,15 @@ export const HeroSection = () => {
             </p>
 
             <div className="flex flex-wrap items-center gap-[10px]">
-              <a
-                href={heroContent.primaryAction.href}
-                className="inline-flex h-[40px] items-center justify-center bg-[#f3c316] px-[18px] text-[11px] font-semibold text-black transition-colors hover:bg-[#ffd42b]"
+              <Link
+                to={heroContent.primaryAction.href}
+                className="inline-flex h-[40px] items-center justify-center bg-[#f3c316] px-[18px] text-[11px] font-semibold text-black transition-all duration-300 hover:-translate-y-[2px] hover:bg-[#ffd42b] hover:shadow-[0_12px_22px_rgba(243,195,22,0.3)]"
               >
                 {heroContent.primaryAction.label}
-              </a>
+              </Link>
               <a
                 href={heroContent.secondaryAction.href}
-                className="inline-flex h-[40px] items-center justify-center border border-white/55 bg-black/18 px-[18px] text-[11px] font-medium text-white transition-colors hover:bg-white/10"
+                className="inline-flex h-[40px] items-center justify-center border border-white/55 bg-black/18 px-[18px] text-[11px] font-medium text-white transition-all duration-300 hover:-translate-y-[2px] hover:bg-white/10 hover:shadow-[0_12px_22px_rgba(0,0,0,0.18)]"
               >
                 {heroContent.secondaryAction.label}
               </a>
@@ -71,13 +72,13 @@ export const HeroSection = () => {
       </div>
 
       <div className="absolute right-[20px] top-1/2 z-10 hidden -translate-y-1/2 flex-col gap-[11px] text-white/85 lg:flex">
-        <a href="#instagram" aria-label="Instagram" className="transition-colors hover:text-white">
+        <a href="#instagram" aria-label="Instagram" className="transition-all duration-300 hover:scale-110 hover:text-white">
           <Camera className="h-[12px] w-[12px]" strokeWidth={1.85} />
         </a>
-        <a href="#telegram" aria-label="Telegram" className="transition-colors hover:text-white">
+        <a href="#telegram" aria-label="Telegram" className="transition-all duration-300 hover:scale-110 hover:text-white">
           <Send className="h-[12px] w-[12px]" strokeWidth={1.85} />
         </a>
-        <a href="#youtube" aria-label="YouTube" className="transition-colors hover:text-white">
+        <a href="#youtube" aria-label="YouTube" className="transition-all duration-300 hover:scale-110 hover:text-white">
           <CirclePlay className="h-[12px] w-[12px]" strokeWidth={1.85} />
         </a>
       </div>
@@ -94,7 +95,7 @@ export const HeroSection = () => {
               className={
                 isActive
                   ? 'h-[4px] w-[24px] rounded-full bg-white'
-                  : 'h-[4px] w-[14px] rounded-full bg-white/35 transition-colors hover:bg-white/65'
+                  : 'h-[4px] w-[14px] rounded-full bg-white/35 transition-all duration-300 hover:scale-110 hover:bg-white/65'
               }
             />
           );

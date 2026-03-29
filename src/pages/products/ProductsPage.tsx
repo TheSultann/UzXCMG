@@ -31,13 +31,14 @@ export const ProductsPage = () => {
               <Link
                 key={card.id}
                 to={`/products/${card.id}`}
-                className="group relative flex min-h-[294px] overflow-hidden bg-[#efefef] px-[20px] pb-[10px] pt-[14px]"
+                className="group relative flex min-h-[294px] overflow-hidden bg-[#efefef] px-[20px] pb-[10px] pt-[14px] shadow-[0_14px_32px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_20px_40px_rgba(17,17,17,0.1)]"
               >
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[110px] bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.08),transparent_72%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                 <h3 className="relative z-10 text-[15px] font-semibold text-[#333333]">{card.title}</h3>
                 <img
                   src={card.image}
                   alt={card.title}
-                  className={`absolute bottom-0 left-1/2 -translate-x-1/2 object-contain transition-transform duration-300 group-hover:scale-[1.03] ${card.imgClass}`}
+                  className={`absolute bottom-0 left-1/2 z-10 -translate-x-1/2 object-contain drop-shadow-[0_14px_20px_rgba(0,0,0,0.12)] transition-transform duration-500 group-hover:translate-y-[-16px] group-hover:scale-[1.08] ${card.imgClass}`}
                 />
               </Link>
             ))}
@@ -48,15 +49,16 @@ export const ProductsPage = () => {
                 <Link
                   key={card.id}
                   to={`/products/${card.id}`}
-                  className="group relative flex min-h-[141px] overflow-hidden bg-[#efefef] px-[16px] pb-[8px] pt-[12px]"
+                  className="group relative flex min-h-[141px] overflow-hidden bg-[#efefef] px-[16px] pb-[8px] pt-[12px] shadow-[0_14px_30px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_20px_38px_rgba(17,17,17,0.1)]"
                 >
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[72px] bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.08),transparent_72%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
                   <h3 className="relative z-10 max-w-[170px] text-[14px] leading-[1.15] font-semibold text-[#333333]">
                     {card.title}
                   </h3>
                   <img
                     src={card.image}
                     alt={card.title}
-                    className={`absolute bottom-0 right-0 object-contain transition-transform duration-300 group-hover:scale-[1.03] ${card.imgClass}`}
+                    className={`absolute bottom-0 right-0 z-10 object-contain drop-shadow-[0_12px_18px_rgba(0,0,0,0.12)] transition-transform duration-500 group-hover:translate-y-[-12px] group-hover:scale-[1.08] ${card.imgClass}`}
                   />
                 </Link>
               ))}
@@ -65,13 +67,14 @@ export const ProductsPage = () => {
             {/* Last tall card */}
             <Link
               to={`/products/${productCards[4].id}`}
-              className="group relative flex min-h-[294px] overflow-hidden bg-[#efefef] px-[20px] pb-[10px] pt-[14px]"
+              className="group relative flex min-h-[294px] overflow-hidden bg-[#efefef] px-[20px] pb-[10px] pt-[14px] shadow-[0_14px_32px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_20px_40px_rgba(17,17,17,0.1)]"
             >
+              <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[110px] bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.08),transparent_72%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <h3 className="relative z-10 text-[15px] font-semibold text-[#333333]">{productCards[4].title}</h3>
               <img
                 src={productCards[4].image}
                 alt={productCards[4].title}
-                className={`absolute bottom-2 right-0 object-contain transition-transform duration-300 group-hover:scale-[1.03] ${productCards[4].imgClass}`}
+                className={`absolute bottom-2 right-0 z-10 object-contain drop-shadow-[0_14px_20px_rgba(0,0,0,0.12)] transition-transform duration-500 group-hover:translate-y-[-16px] group-hover:scale-[1.08] ${productCards[4].imgClass}`}
               />
             </Link>
           </div>

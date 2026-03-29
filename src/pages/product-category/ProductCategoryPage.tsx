@@ -81,10 +81,10 @@ export const ProductCategoryPage = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(i)}
-                className={`px-[16px] py-[8px] text-[12px] font-medium transition-colors ${
+                className={`px-[16px] py-[8px] text-[12px] font-medium transition-all duration-300 ${
                   activeTab === i
                     ? 'bg-[#2e2e2e] text-white'
-                    : 'border border-[#d8d8d8] bg-white text-[#333333] hover:bg-[#f5f5f5]'
+                    : 'border border-[#d8d8d8] bg-white text-[#333333] hover:-translate-y-[1px] hover:bg-[#f5f5f5]'
                 }`}
               >
                 {tab.label}
@@ -94,7 +94,7 @@ export const ProductCategoryPage = () => {
 
           <div className="grid gap-[24px] lg:grid-cols-[220px_1fr]">
             <aside className="hidden lg:block">
-              <div className="border border-[#e5e5e5] bg-white">
+              <div className="border border-[#e5e5e5] bg-white shadow-[0_16px_34px_rgba(17,17,17,0.05)]">
                 <div className="border-b border-[#e5e5e5] px-[16px] py-[12px]">
                   <h3 className="text-[14px] font-semibold text-[#333333]">Mahsulotlar</h3>
                 </div>
@@ -135,7 +135,7 @@ export const ProductCategoryPage = () => {
                 <Link
                   key={product.id}
                   to={`/products/${category}/${product.id}`}
-                  className="group block border border-[#eeeeee] bg-white transition-shadow hover:shadow-md"
+                  className="group block border border-[#eeeeee] bg-white shadow-[0_14px_30px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_20px_38px_rgba(17,17,17,0.1)]"
                 >
                   <div className="flex h-[200px] items-center justify-center bg-[#f8f8f8] p-[16px]">
                     <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-[1.04]" />

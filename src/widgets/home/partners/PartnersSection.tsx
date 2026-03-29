@@ -10,100 +10,69 @@ const partners = [
   {
     image: xorazmHokimligi,
     alt: 'Xorazm Viloyat Hokimligi',
-    label: (
-      <>
-        Xorazm Viloyat
-        <br />
-        Hokimligi
-      </>
-    ),
   },
   {
     image: togKonGeologiya,
     alt: 'TOG-KON SANOATI VA GEOLOGIYA VAZIRLIGI',
-    label: (
-      <>
-        TOG'- KON SANOATI VA
-        <br />
-        GEOLOGIYA VAZIRLIGI
-      </>
-    ),
   },
   {
     image: avtomobilYollari,
     alt: "AVTOMOBIL YO'LLARI QO'MITASI",
-    label: (
-      <>
-        AVTOMOBIL YO'LLARI
-        <br />
-        QO'MITASI
-      </>
-    ),
   },
   {
     image: ozbekekspertiza,
     alt: "O'ZBEKEKSPERTIZA",
-    label: <>O'ZBEKEKSPERTIZA</>,
   },
   {
     image: suvXojaligi,
     alt: "SUV XO'JALIGI VAZIRLIGI",
-    label: (
-      <>
-        SUV XO'JALIGI
-        <br />
-        VAZIRLIGI
-      </>
-    ),
   },
   {
     image: davlatBojxona,
     alt: "O'zbekiston Respublikasi davlat bojxona qo'mitasi",
-    label: (
-      <>
-        O'zbekiston Respublikasi
-        <br />
-        davlat bojxona qo'mitasi
-      </>
-    ),
   },
   {
     image: ozmeliomashlizing,
     alt: "O'ZMELIOMASHLIZING DAVLAT UNITAR KORXONASI",
-      label: (
-        <>
-        O'ZMELIOMASHLIZING
-        <br />
-        DAVLAT UNITAR KORXONASI
-      </>
-    ),
   },
 ] as const;
 
 export const PartnersSection = () => {
   return (
     <section className="bg-white pb-[32px] pt-[42px]">
+      <style>{`
+        @keyframes partners-marquee {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+      `}</style>
+
       <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
         <div className="mb-[24px] flex items-center justify-center gap-[10px]">
           <span className="h-[33px] w-[6px] bg-[#f3c316]"></span>
           <h2 className="text-[31px] font-bold tracking-[-0.5px] text-[#2d2d2d]">Hamkorlar</h2>
         </div>
 
-        <div className="grid grid-cols-2 items-start gap-y-4 text-center sm:grid-cols-4 lg:grid-cols-7">
-          {partners.map((partner) => (
-            <div key={partner.alt} className="flex flex-col items-center">
-              <div className="flex h-[92px] w-[100px] items-center justify-center">
-                <img
-                  src={partner.image}
-                  alt={partner.alt}
-                  className="max-h-[84px] max-w-[88px] object-contain"
-                />
+        <div className="overflow-hidden">
+          <div
+            className="flex w-max items-start"
+            style={{ animation: 'partners-marquee 30s linear infinite' }}
+          >
+            {[...partners, ...partners].map((partner, index) => (
+              <div
+                key={`${partner.alt}-${index}`}
+                className="group mx-[8px] flex h-[138px] w-[172px] shrink-0 items-center justify-center rounded-[12px] px-[10px] py-[10px] text-center transition-all duration-300 hover:-translate-y-[3px] hover:bg-[#fafafa]"
+              >
+                <div className="flex h-[108px] w-[136px] items-center justify-center">
+                  <img
+                    src={partner.image}
+                    alt={partner.alt}
+                    className="max-h-[102px] max-w-[128px] object-contain transition-transform duration-300 group-hover:scale-[1.05]"
+                  />
+                </div>
               </div>
-              <p className="mt-[8px] max-w-[150px] text-[9px] leading-[1.2] font-bold uppercase text-[#2c2c2c] sm:text-[10px]">
-                {partner.label}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -49,19 +49,19 @@ export const ProductDetailPage = () => {
         <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
           <div className="grid gap-[32px] lg:grid-cols-2">
             <div>
-              <div className="mb-[12px] flex h-[320px] items-center justify-center border border-[#eeeeee] bg-[#f8f8f8] p-[24px] md:h-[400px]">
-                <img src={productImages[activeImage]} alt="Product" className="max-h-full max-w-full object-contain" />
+              <div className="mb-[12px] flex h-[320px] items-center justify-center border border-[#eeeeee] bg-[#f8f8f8] p-[24px] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_24px_44px_rgba(17,17,17,0.1)] md:h-[400px]">
+                <img src={productImages[activeImage]} alt="Product" className="max-h-full max-w-full object-contain transition-transform duration-500 hover:scale-[1.04]" />
               </div>
               <div className="flex gap-[8px]">
                 {productImages.map((img, i) => (
                   <button
                     key={i}
                     onClick={() => setActiveImage(i)}
-                    className={`flex h-[64px] w-[64px] items-center justify-center border bg-[#f8f8f8] p-[6px] transition-all md:h-[80px] md:w-[80px] ${
+                    className={`flex h-[64px] w-[64px] items-center justify-center border bg-[#f8f8f8] p-[6px] shadow-[0_8px_18px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[2px] md:h-[80px] md:w-[80px] ${
                       activeImage === i ? 'border-[#0f5db8]' : 'border-[#eeeeee] hover:border-[#ccc]'
                     }`}
                   >
-                    <img src={img} alt="" className="max-h-full max-w-full object-contain" />
+                    <img src={img} alt="" className="max-h-full max-w-full object-contain transition-transform duration-300 hover:scale-[1.05]" />
                   </button>
                 ))}
               </div>
@@ -85,7 +85,7 @@ export const ProductDetailPage = () => {
                 {mainSpecs.map((spec) => {
                   const Icon = spec.icon;
                   return (
-                    <div key={spec.label} className="flex items-center gap-[10px] border border-[#eeeeee] bg-[#fafafa] px-[14px] py-[12px]">
+                    <div key={spec.label} className="group flex items-center gap-[10px] border border-[#eeeeee] bg-[#fafafa] px-[14px] py-[12px] transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_14px_28px_rgba(17,17,17,0.06)]">
                       <Icon className="h-[18px] w-[18px] text-[#f3c316]" strokeWidth={1.8} />
                       <div>
                         <p className="text-[10px] text-[#888888]">{spec.label}</p>
@@ -95,7 +95,7 @@ export const ProductDetailPage = () => {
                   );
                 })}
               </div>
-              <a href="/contact" className="inline-flex h-[44px] items-center justify-center gap-[8px] bg-[#f3c316] px-[32px] text-[13px] font-semibold text-black transition-colors hover:bg-[#ffd42b]">
+              <a href="/contact" className="inline-flex h-[44px] items-center justify-center gap-[8px] bg-[#f3c316] px-[32px] text-[13px] font-semibold text-black transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#ffd42b] hover:shadow-[0_12px_20px_rgba(243,195,22,0.28)]">
                 <Phone className="h-[14px] w-[14px]" strokeWidth={2} />
                 Bog'lanish
               </a>
@@ -109,7 +109,7 @@ export const ProductDetailPage = () => {
           <h3 className="mb-[24px] text-[22px] font-bold text-[#222222]">Batafsil</h3>
           <div className="grid grid-cols-1 gap-x-[32px] gap-y-[2px] md:grid-cols-2 lg:grid-cols-4">
             {detailedSpecs.filter(s => s.label).map((spec, i) => (
-              <div key={i} className="border-b border-[#e5e5e5] py-[12px]">
+              <div key={i} className="border-b border-[#e5e5e5] py-[12px] transition-colors duration-300 hover:bg-black/[0.015]">
                 <p className="text-[13px] font-semibold text-[#333333]">{spec.label}</p>
                 {spec.value && <p className="mt-[2px] text-[12px] text-[#777777]">{spec.value}</p>}
               </div>
@@ -123,7 +123,7 @@ export const ProductDetailPage = () => {
           <SectionTitle>Shunga o'xshash mahsulotlar</SectionTitle>
           <div className="grid grid-cols-1 gap-[16px] sm:grid-cols-2 lg:grid-cols-4">
             {similarProducts.map((product) => (
-              <Link key={product.id} to={`/products/${product.id}`} className="group block border border-[#eeeeee] bg-white transition-shadow hover:shadow-md">
+              <Link key={product.id} to={`/products/${product.id}`} className="group block border border-[#eeeeee] bg-white shadow-[0_14px_30px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_20px_38px_rgba(17,17,17,0.1)]">
                 <div className="flex h-[180px] items-center justify-center bg-[#f8f8f8] p-[16px]">
                   <img src={product.image} alt={product.name} className="max-h-full max-w-full object-contain transition-transform duration-300 group-hover:scale-[1.04]" />
                 </div>

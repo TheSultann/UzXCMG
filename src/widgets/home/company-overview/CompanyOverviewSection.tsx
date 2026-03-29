@@ -30,11 +30,11 @@ export const CompanyOverviewSection = () => {
         </div>
 
         <div className="grid gap-4 lg:grid-cols-[1.25fr_0.78fr_1fr]">
-          <div className="min-h-[202px] overflow-hidden border border-white/10 bg-[#1a1a1a]">
-            <img src={banner} alt="UzXCMG ishlab chiqarish maydoni" className="h-full w-full object-cover" />
+          <div className="min-h-[202px] overflow-hidden border border-white/10 bg-[#1a1a1a] shadow-[0_20px_44px_rgba(0,0,0,0.18)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_26px_54px_rgba(0,0,0,0.26)]">
+            <img src={banner} alt="UzXCMG ishlab chiqarish maydoni" className="h-full w-full object-cover transition-transform duration-500 hover:scale-[1.04]" />
           </div>
 
-          <div id="history" className="border border-white/10 bg-[#161616] p-4">
+          <div id="history" className="border border-white/10 bg-[#161616] p-4 shadow-[0_20px_42px_rgba(0,0,0,0.16)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_26px_54px_rgba(0,0,0,0.24)]">
             <h3 className="mb-3 text-[14px] font-semibold leading-[1.35]">
               Orta Osiyoda yagona bo'lgan maxsus texnikalarni ishlab chiquvchi qo'shma korxona
             </h3>
@@ -56,8 +56,8 @@ export const CompanyOverviewSection = () => {
               const Icon = item.icon;
 
               return (
-                <div key={item.label} className="flex min-h-[95px] flex-col justify-center border border-white/10 bg-[#161616] px-5 py-4">
-                  <Icon className="mb-3 h-6 w-6 text-white" strokeWidth={1.8} />
+                <div key={item.label} className="group flex min-h-[95px] flex-col justify-center border border-white/10 bg-[#161616] px-5 py-4 transition-all duration-300 hover:-translate-y-[4px] hover:bg-[#1b1b1b] hover:shadow-[0_18px_36px_rgba(0,0,0,0.2)]">
+                  <Icon className="mb-3 h-6 w-6 text-white transition-transform duration-300 group-hover:scale-110" strokeWidth={1.8} />
                   <p className="text-[19px] font-bold leading-none text-[#f3c316]">{item.value}</p>
                   <p className="mt-2 text-[11px] text-white/75">{item.label}</p>
                 </div>

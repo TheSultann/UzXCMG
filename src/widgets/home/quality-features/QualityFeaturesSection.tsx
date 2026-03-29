@@ -84,9 +84,9 @@ export const QualityFeaturesSection = () => {
           {featureCards.map((feature, index) => (
             <div
               key={index}
-              className="flex min-h-[136px] flex-col items-center justify-center bg-[#efefef] px-3 py-4 text-center"
+              className="group flex min-h-[136px] flex-col items-center justify-center bg-[#efefef] px-3 py-4 text-center shadow-[0_14px_30px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:bg-[#e9e9e9] hover:shadow-[0_20px_38px_rgba(17,17,17,0.1)]"
             >
-              <div className="mb-[10px] flex h-[58px] items-center justify-center">{feature.icon}</div>
+              <div className="mb-[10px] flex h-[58px] items-center justify-center transition-transform duration-300 group-hover:scale-110">{feature.icon}</div>
               <p className="text-[11px] leading-[1.34] font-semibold text-[#333333]">{feature.title}</p>
             </div>
           ))}

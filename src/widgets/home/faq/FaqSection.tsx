@@ -22,7 +22,7 @@ export const FaqSection = ({ title, sectionId = 'service-centers' }: FaqSectionP
             <details
               key={item}
               id={index === 1 ? 'maintenance' : index === 3 ? 'spare-parts' : undefined}
-              className="group bg-[#efefef] open:bg-[#e8e8e8]"
+              className="group bg-[#efefef] shadow-[0_12px_26px_rgba(17,17,17,0.03)] transition-all duration-300 hover:-translate-y-[2px] hover:bg-[#ebebeb] hover:shadow-[0_18px_34px_rgba(17,17,17,0.08)] open:bg-[#e8e8e8]"
             >
               <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-4 text-[12px] font-medium text-[#2d2d2d]">
                 <span>{item}</span>

@@ -26,13 +26,13 @@ export const ServiceCentersPage = () => {
 
           <div className="grid grid-cols-1 gap-[24px] sm:grid-cols-2 lg:grid-cols-4">
             {serviceCenters.map((center) => (
-              <div key={center.id} className="flex flex-col border border-[#eeeeee] bg-[#f8f8f8]">
+              <div key={center.id} className="group flex flex-col border border-[#eeeeee] bg-[#f8f8f8] shadow-[0_16px_34px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_44px_rgba(17,17,17,0.1)]">
                 {/* Photo */}
                 <div className="h-[180px] w-full overflow-hidden bg-[#e0e0e0]">
                   <img
                     src={center.image}
                     alt={center.name}
-                    className="h-full w-full object-cover mix-blend-multiply"
+                    className="h-full w-full object-cover mix-blend-multiply transition-transform duration-500 group-hover:scale-[1.05]"
                   />
                 </div>
 
@@ -68,7 +68,7 @@ export const ServiceCentersPage = () => {
                     </div>
                   </div>
 
-                  <button className="mt-auto w-full bg-[#2d2d2d] py-[10px] text-[12px] font-medium text-white transition-colors hover:bg-black">
+                  <button className="mt-auto w-full bg-[#2d2d2d] py-[10px] text-[12px] font-medium text-white transition-all duration-300 hover:-translate-y-[1px] hover:bg-black hover:shadow-[0_10px_18px_rgba(45,45,45,0.22)]">
                     Xaritada ko'rish
                   </button>
                 </div>

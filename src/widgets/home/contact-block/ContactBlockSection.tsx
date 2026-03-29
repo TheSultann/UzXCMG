@@ -5,7 +5,7 @@ export const ContactBlockSection = () => {
     <section id="contact" className="bg-white py-8">
       <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
         <div className="grid gap-4 bg-white lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="relative min-h-[250px] overflow-hidden bg-[#d9ddd8]">
+          <div className="relative min-h-[250px] overflow-hidden bg-[#d9ddd8] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.1)]">
             <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(255,255,255,0.18)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.18)_1px,transparent_1px)] bg-[size:34px_34px] opacity-60"></div>
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_12%_18%,rgba(58,97,145,0.3),transparent_25%),radial-gradient(circle_at_68%_34%,rgba(91,131,186,0.22),transparent_22%),radial-gradient(circle_at_78%_72%,rgba(76,117,168,0.2),transparent_18%)]"></div>
             <div className="absolute left-[48%] top-[34%] flex -translate-x-1/2 -translate-y-1/2 flex-col items-center">
@@ -16,7 +16,7 @@ export const ContactBlockSection = () => {
             </div>
           </div>
 
-          <div className="bg-[#efefef] px-6 py-5">
+          <div className="bg-[#efefef] px-6 py-5 shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.1)]">
             <div className="mb-4 flex items-center gap-2">
               <span className="h-6 w-[5px] bg-[#f3c316]"></span>
               <h2 className="text-[22px] font-bold text-[#2d2d2d]">Bog'lanish</h2>
@@ -52,7 +52,7 @@ export const ContactBlockSection = () => {
 
               <button
                 type="button"
-                className="h-[32px] w-full bg-[#2d2d2d] text-[11px] font-medium text-white transition-colors hover:bg-black"
+                className="h-[32px] w-full bg-[#2d2d2d] text-[11px] font-medium text-white transition-all duration-300 hover:-translate-y-[1px] hover:bg-black hover:shadow-[0_10px_18px_rgba(45,45,45,0.22)]"
               >
                 Yuborish
               </button>
