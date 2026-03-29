@@ -96,12 +96,12 @@ type MediaCardProps = {
 const MediaCard = ({ item, widthClass, heightClass }: MediaCardProps) => {
   return (
     <div
-      className={`group mr-[10px] shrink-0 overflow-hidden ${widthClass} ${heightClass} ${item.frameClass}`}
+      className={`group mr-[10px] shrink-0 overflow-hidden border border-black/5 shadow-[0_14px_30px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_18px_38px_rgba(17,17,17,0.1)] ${widthClass} ${heightClass} ${item.frameClass}`}
     >
       <img
         src={item.src}
         alt={item.alt}
-        className={`h-full w-full ${item.imageClass} transition-transform duration-500 group-hover:scale-[1.05]`}
+        className={`h-full w-full ${item.imageClass} transition-transform duration-500 group-hover:scale-[1.06]`}
       />
     </div>
   )

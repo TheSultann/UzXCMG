@@ -53,12 +53,12 @@ export const CertificatesPage = () => {
               <div className="grid grid-cols-1 gap-[24px] sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {dummyCerts.map((cert) => (
                   <div key={cert.id} className="group flex w-full flex-col items-center text-center">
-                    <div className="mb-[16px] w-full overflow-hidden border border-[#eeeeee] bg-[#fafafa] p-[10px] shadow-[0_16px_30px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_20px_36px_rgba(17,17,17,0.08)]">
+                    <div className="mb-[16px] w-full overflow-hidden border border-[#eeeeee] bg-[#fafafa] p-[10px] shadow-[0_16px_30px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_40px_rgba(17,17,17,0.09)]">
                       <div className="relative pt-[141%]">
                         <img
                           src={cert.image}
                           alt={cert.title}
-                          className="absolute left-0 top-0 h-full w-full object-cover"
+                          className="absolute left-0 top-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
                         />
                       </div>
                     </div>
@@ -72,13 +72,13 @@ export const CertificatesPage = () => {
             )}
 
             {activeTab === 'normative' && (
-              <div className="border border-black/5 bg-white p-[22px] text-[14px] leading-relaxed text-[#555] shadow-[0_18px_36px_rgba(17,17,17,0.05)]">
+              <div className="border border-black/5 bg-white p-[22px] text-[14px] leading-relaxed text-[#555] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.09)]">
                 <p>Normativ hujjatlar bo&apos;limi ruxsatnomalar, texnik shartlar va standartlarni o&apos;z ichiga oladi.</p>
               </div>
             )}
 
             {activeTab === 'warranty' && (
-              <div className="border border-black/5 bg-white p-[22px] text-[14px] leading-relaxed text-[#555] shadow-[0_18px_36px_rgba(17,17,17,0.05)]">
+              <div className="border border-black/5 bg-white p-[22px] text-[14px] leading-relaxed text-[#555] shadow-[0_18px_36px_rgba(17,17,17,0.05)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_42px_rgba(17,17,17,0.09)]">
                 <p>Kafolat va xizmatlar, ehtiyot qismlarni ta&apos;minlash shartlari haqida to&apos;liq ma&apos;lumot.</p>
               </div>
             )}

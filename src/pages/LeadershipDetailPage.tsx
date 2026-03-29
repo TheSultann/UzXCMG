@@ -24,11 +24,11 @@ export const LeadershipDetailPage = () => {
       <section className="px-4 py-[36px] sm:px-5 lg:px-6">
         <div className="mx-auto w-full max-w-[1238px]">
           <div className="grid items-start gap-[16px] lg:grid-cols-[334px_592px] lg:gap-[18px]">
-            <div className="overflow-hidden bg-[#f0f0f0]">
+            <div className="overflow-hidden bg-[#f0f0f0] shadow-[0_18px_40px_rgba(17,17,17,0.08)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_24px_48px_rgba(17,17,17,0.14)]">
               <img
                 src={leader.image}
                 alt={leader.name}
-                className="h-[330px] w-full object-cover object-center"
+                className="h-[330px] w-full object-cover object-center transition-transform duration-500 hover:scale-[1.04]"
               />
             </div>
 
@@ -58,7 +58,7 @@ export const LeadershipDetailPage = () => {
                 ))}
               </div>
 
-              <div className="mt-[14px] inline-flex h-[28px] items-center gap-[6px] bg-[#2f2f2f] px-[10px]">
+              <div className="mt-[14px] inline-flex h-[28px] items-center gap-[6px] bg-[#2f2f2f] px-[10px] transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#1f1f1f] hover:shadow-[0_10px_18px_rgba(47,47,47,0.24)]">
                 <Phone className="h-[11px] w-[11px] text-white" strokeWidth={1.9} />
                 <span className="text-[11px] font-medium text-white">
                   Xizmat telefoni {leader.phone}
