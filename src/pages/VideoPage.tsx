@@ -1,5 +1,5 @@
 import { Play } from 'lucide-react'
-import { SectionTitle } from '../components/SectionTitle'
+import { SectionTitle } from '../shared/ui/SectionTitle'
 import videoStageThumbnail from '../assets/video-stage-thumbnail.png'
 
 const videos = Array.from({ length: 6 }, (_, index) => ({

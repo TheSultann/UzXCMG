@@ -1,6 +1,6 @@
 import { Phone } from 'lucide-react'
 import { Navigate, useParams } from 'react-router-dom'
-import { PageHeroBanner } from '../components/PageHeroBanner'
+import { PageHeroBanner } from '../shared/ui/PageHeroBanner'
 import { leaders } from '../data/leaders'
 
 const biographyParagraphs = [

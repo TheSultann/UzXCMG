@@ -1,6 +1,6 @@
 import { Mail, MapPin, MessageSquareText, Phone, User } from 'lucide-react'
-import { PageHeroBanner } from '../components/PageHeroBanner'
-import { SectionTitle } from '../components/SectionTitle'
+import { PageHeroBanner } from '../shared/ui/PageHeroBanner'
+import { SectionTitle } from '../shared/ui/SectionTitle'
 
 import heroBanner from '../assets/hero/hero-banner.png'
 

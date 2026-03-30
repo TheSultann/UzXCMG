@@ -1,6 +1,6 @@
 import { Clock3 } from 'lucide-react'
-import { PageHeroBanner } from '../components/PageHeroBanner'
-import { SectionTitle } from '../components/SectionTitle'
+import { PageHeroBanner } from '../shared/ui/PageHeroBanner'
+import { SectionTitle } from '../shared/ui/SectionTitle'
 
 import newsBanner from '../assets/news-banner.png'
 import newsFeaturedPort from '../assets/news-featured-port.png'

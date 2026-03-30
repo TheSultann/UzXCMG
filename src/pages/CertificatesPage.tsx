@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { PageHeroBanner } from '../components/PageHeroBanner'
-import { SectionTitle } from '../components/SectionTitle'
+import { PageHeroBanner } from '../shared/ui/PageHeroBanner'
+import { SectionTitle } from '../shared/ui/SectionTitle'
 
 import certificateTemplate from '../assets/certificate-template.png'
 

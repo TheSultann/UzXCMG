@@ -1,7 +1,7 @@
 import { Phone } from 'lucide-react'
 import { Link } from 'react-router-dom'
-import { PageHeroBanner } from '../components/PageHeroBanner'
-import { SectionTitle } from '../components/SectionTitle'
+import { PageHeroBanner } from '../shared/ui/PageHeroBanner'
+import { SectionTitle } from '../shared/ui/SectionTitle'
 import { leaders } from '../data/leaders'
 
 export const LeadershipPage = () => {

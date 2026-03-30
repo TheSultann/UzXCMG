@@ -1,5 +1,5 @@
-import { PageHeroBanner } from '../components/PageHeroBanner'
-import { SectionTitle } from '../components/SectionTitle'
+import { PageHeroBanner } from '../shared/ui/PageHeroBanner'
+import { SectionTitle } from '../shared/ui/SectionTitle'
 
 import mediaDumpTruckLeft from '../assets/media-dump-truck-left.jpg'
 import mediaExcavatorMountain from '../assets/media-excavator-mountain.jpg'

@@ -1,5 +1,5 @@
 import { Boxes, Globe2, Truck, Users } from 'lucide-react'
-import { PageHeroBanner } from '../components/PageHeroBanner'
+import { PageHeroBanner } from '../shared/ui/PageHeroBanner'
 import heroBanner from '../assets/hero/hero-banner.png'
 
 const stats = [
