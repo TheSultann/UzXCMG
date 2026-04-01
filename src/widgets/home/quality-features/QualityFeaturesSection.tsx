@@ -74,7 +74,7 @@ const featureCards = [
 export const QualityFeaturesSection = () => {
   return (
     <section className="bg-white pb-[34px] pt-[20px] sm:pb-[46px] sm:pt-[26px]">
-      <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
         <div className="mb-[20px] flex items-center justify-center gap-[9px]">
           <span className="h-[26px] w-[6px] bg-[#f3c316]"></span>
           <h2 className="text-[22px] font-bold tracking-[-0.3px] text-[#2d2d2d] sm:text-[27px] sm:tracking-[-0.4px]">
@@ -89,7 +89,7 @@ export const QualityFeaturesSection = () => {
               className="group flex min-h-[124px] flex-col items-center justify-center bg-[#efefef] px-2.5 py-3 text-center shadow-[0_14px_30px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:bg-[#e9e9e9] hover:shadow-[0_20px_38px_rgba(17,17,17,0.1)] sm:min-h-[136px] sm:px-3 sm:py-4"
             >
               <div className="mb-[8px] flex h-[48px] items-center justify-center transition-transform duration-300 group-hover:scale-110 sm:mb-[10px] sm:h-[58px]">{feature.icon}</div>
-              <p className="text-[10px] leading-[1.35] font-semibold text-[#333333] sm:text-[11px]">{feature.title}</p>
+              <p className="text-[12px] leading-[1.45] font-semibold text-[#333333] sm:text-[13px]">{feature.title}</p>
             </div>
           ))}
         </div>
@@ -97,3 +97,4 @@ export const QualityFeaturesSection = () => {
     </section>
   );
 };
+

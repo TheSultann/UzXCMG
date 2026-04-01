@@ -21,7 +21,7 @@ export const ServiceCentersPage = () => {
       <PageHeroBanner title="SERVIS MARKAZLARI" />
 
       <section className="bg-white py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <SectionTitle>Servis markazlari</SectionTitle>
 
           <div className="grid grid-cols-1 gap-[24px] sm:grid-cols-2 lg:grid-cols-4">
@@ -44,16 +44,16 @@ export const ServiceCentersPage = () => {
                     <div className="flex items-start gap-[8px]">
                       <Clock3 className="mt-[2px] h-[14px] w-[14px] shrink-0 text-[#666666]" strokeWidth={1.8} />
                       <div>
-                        <p className="mb-[2px] text-[11px] font-medium text-[#888888]">Ish vaqti</p>
-                        <p className="whitespace-pre-line text-[12px] leading-[1.4] text-[#333333]">{center.hours}</p>
+                        <p className="mb-[2px] text-[12px] font-medium text-[#888888]">Ish vaqti</p>
+                        <p className="whitespace-pre-line text-[14px] leading-[1.55] text-[#333333]">{center.hours}</p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-[8px]">
                       <Phone className="mt-[2px] h-[14px] w-[14px] shrink-0 text-[#666666]" strokeWidth={1.8} />
                       <div>
-                        <p className="mb-[2px] text-[11px] font-medium text-[#888888]">Telefon raqam</p>
-                        <a href={`tel:${center.phone.replace(/[^+\d]/g, '')}`} className="text-[12px] text-[#333333] hover:text-[#0f5db8]">
+                        <p className="mb-[2px] text-[12px] font-medium text-[#888888]">Telefon raqam</p>
+                        <a href={`tel:${center.phone.replace(/[^+\d]/g, '')}`} className="text-[14px] text-[#333333] hover:text-[#0f5db8]">
                           {center.phone}
                         </a>
                       </div>
@@ -62,13 +62,13 @@ export const ServiceCentersPage = () => {
                     <div className="flex items-start gap-[8px]">
                       <MapPin className="mt-[2px] h-[14px] w-[14px] shrink-0 text-[#666666]" strokeWidth={1.8} />
                       <div>
-                        <p className="mb-[2px] text-[11px] font-medium text-[#888888]">Manzil</p>
-                        <p className="text-[12px] text-[#333333]">{center.address}</p>
+                        <p className="mb-[2px] text-[12px] font-medium text-[#888888]">Manzil</p>
+                        <p className="text-[14px] leading-[1.55] text-[#333333]">{center.address}</p>
                       </div>
                     </div>
                   </div>
 
-                  <button className="mt-auto w-full bg-[#2d2d2d] py-[10px] text-[12px] font-medium text-white transition-all duration-300 hover:-translate-y-[1px] hover:bg-black hover:shadow-[0_10px_18px_rgba(45,45,45,0.22)]">
+                  <button className="mt-auto w-full bg-[#2d2d2d] py-[11px] text-[13px] font-medium text-white transition-all duration-300 hover:-translate-y-[1px] hover:bg-black hover:shadow-[0_10px_18px_rgba(45,45,45,0.22)]">
                     Xaritada ko'rish
                   </button>
                 </div>
@@ -80,3 +80,4 @@ export const ServiceCentersPage = () => {
     </>
   );
 };
+

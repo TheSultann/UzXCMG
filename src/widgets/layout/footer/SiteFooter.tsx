@@ -11,7 +11,7 @@ import {
 export const SiteFooter = () => {
   return (
     <footer className="bg-[#1C1C1C] pb-6 pt-10 text-gray-300 sm:pt-16">
-      <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
         <div className="mb-10 flex justify-center sm:mb-16">
           <BrandLogo withPlate imageClassName="h-8 w-auto object-contain sm:h-10" />
         </div>
@@ -20,8 +20,8 @@ export const SiteFooter = () => {
           {footerLinkColumns.map((column) => (
             <div key={column.title} className="flex flex-col gap-4">
               <h3 className="mb-1 text-[15px] font-medium text-white sm:mb-2">{column.title}</h3>
-              {column.links.map((link) => (
-                <Link key={link.label} to={link.href} className="text-[13px] transition-colors hover:text-white sm:text-sm">
+              {column.links.map((link, index) => (
+                <Link key={`${column.title}-${link.label}-${index}`} to={link.href} className="text-[13px] transition-colors hover:text-white sm:text-sm">
                   {link.label}
                 </Link>
               ))}
@@ -65,3 +65,4 @@ export const SiteFooter = () => {
     </footer>
   );
 };
+

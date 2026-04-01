@@ -37,7 +37,7 @@ export const ProductDetailPage = () => {
       <PageHeroBanner title="Bizning mahsulotlar" />
 
       <section className="bg-white py-[28px] sm:py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <div className="mb-[18px] flex flex-wrap items-center gap-[10px] sm:mb-[22px]">
             <Link
               to={`/products/${category}`}
@@ -46,10 +46,10 @@ export const ProductDetailPage = () => {
               <ArrowLeft className="h-[15px] w-[15px]" strokeWidth={2.2} />
               {categoryTitle} bo'limiga qaytish
             </Link>
-            <span className="rounded-full border border-[#e5ebf2] bg-white px-[12px] py-[8px] text-[11px] font-medium text-[#6b7789]">
+            <span className="rounded-full border border-[#e5ebf2] bg-white px-[12px] py-[8px] text-[12px] font-medium text-[#6b7789]">
               Kategoriya: {categoryTitle}
             </span>
-            <span className="rounded-full border border-[#e5ebf2] bg-white px-[12px] py-[8px] text-[11px] font-medium text-[#6b7789]">
+            <span className="rounded-full border border-[#e5ebf2] bg-white px-[12px] py-[8px] text-[12px] font-medium text-[#6b7789]">
               Toifa: {product.badge}
             </span>
           </div>
@@ -64,14 +64,16 @@ export const ProductDetailPage = () => {
                 />
               </div>
 
-              <div className="flex flex-wrap gap-[8px]">
+              <div className="flex flex-wrap justify-center gap-[10px] sm:justify-start">
                 {product.gallery.map((image, index) => (
                   <button
                     key={`${product.id}-${index}`}
                     type="button"
                     onClick={() => setGalleryState({ productKey, index })}
-                    className={`flex h-[64px] w-[64px] items-center justify-center overflow-hidden rounded-[16px] border bg-[#f8f8f8] p-[6px] shadow-[0_8px_18px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[2px] md:h-[80px] md:w-[80px] ${
-                      activeImageIndex === index ? 'border-[#0f5db8]' : 'border-[#eeeeee] hover:border-[#ccc]'
+                    className={`flex h-[68px] w-[68px] items-center justify-center overflow-hidden rounded-[20px] border bg-[#f8f8f8] p-[7px] shadow-[0_10px_20px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[2px] md:h-[80px] md:w-[80px] ${
+                      activeImageIndex === index
+                        ? 'border-[#0f5db8] bg-[#ffffff] shadow-[0_12px_24px_rgba(15,93,184,0.18)]'
+                        : 'border-[#eeeeee] hover:border-[#cfcfcf] hover:bg-white'
                     }`}
                   >
                     <img
@@ -86,10 +88,10 @@ export const ProductDetailPage = () => {
 
             <div>
               <div className="mb-[12px] flex flex-wrap gap-[8px]">
-                <span className="rounded-full bg-[#f3f7fc] px-[10px] py-[6px] text-[11px] font-semibold text-[#0f5db8]">
+                <span className="rounded-full bg-[#f3f7fc] px-[10px] py-[6px] text-[12px] font-semibold text-[#0f5db8]">
                   {categoryTitle}
                 </span>
-                <span className="rounded-full border border-[#d8e3f1] px-[10px] py-[6px] text-[11px] font-medium text-[#5d6b7d]">
+                <span className="rounded-full border border-[#d8e3f1] px-[10px] py-[6px] text-[12px] font-medium text-[#5d6b7d]">
                   {product.badge}
                 </span>
               </div>
@@ -97,11 +99,11 @@ export const ProductDetailPage = () => {
               <h2 className="mb-[16px] text-[20px] leading-[1.05] font-bold text-[#222222] sm:text-[22px] md:text-[28px]">
                 {product.name}
               </h2>
-              <p className="mb-[20px] text-[13px] leading-[1.7] text-[#666666]">{product.summary}</p>
+              <p className="mb-[20px] text-[14px] leading-[1.8] text-[#666666] sm:text-[15px]">{product.summary}</p>
 
               <ul className="mb-[20px] space-y-[8px]">
                 {product.highlights.map((highlight) => (
-                  <li key={highlight} className="text-[12px] text-[#444444] sm:text-[13px]">
+                  <li key={highlight} className="text-[14px] leading-[1.6] text-[#444444]">
                     <span className="font-medium">{highlight}</span>
                   </li>
                 ))}
@@ -118,8 +120,8 @@ export const ProductDetailPage = () => {
                     >
                       <Icon className="h-[18px] w-[18px] text-[#f3c316]" strokeWidth={1.8} />
                       <div>
-                        <p className="text-[10px] text-[#888888]">{spec.label}</p>
-                        <p className="text-[13px] font-semibold text-[#333333]">{spec.value}</p>
+                        <p className="text-[12px] text-[#888888]">{spec.label}</p>
+                        <p className="text-[14px] font-semibold text-[#333333]">{spec.value}</p>
                       </div>
                     </div>
                   );
@@ -139,13 +141,13 @@ export const ProductDetailPage = () => {
       </section>
 
       <section className="bg-[#f8f8f8] py-[28px] sm:py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <h3 className="mb-[20px] text-[20px] font-bold text-[#222222] sm:mb-[24px] sm:text-[22px]">Batafsil</h3>
           <div className="grid grid-cols-1 gap-x-[32px] gap-y-[2px] md:grid-cols-2 lg:grid-cols-4">
             {product.details.map((spec) => (
               <div key={`${product.id}-${spec.label}`} className="border-b border-[#e5e5e5] py-[12px] transition-colors duration-300 hover:bg-black/[0.015]">
                 <p className="text-[13px] font-semibold text-[#333333]">{spec.label}</p>
-                <p className="mt-[2px] text-[12px] text-[#777777]">{spec.value}</p>
+                <p className="mt-[2px] text-[14px] text-[#777777]">{spec.value}</p>
               </div>
             ))}
           </div>
@@ -154,7 +156,7 @@ export const ProductDetailPage = () => {
 
       {similarProducts.length > 0 ? (
         <section className="bg-white py-[28px] sm:py-[42px]">
-          <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+          <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
             <SectionTitle>Shunga o'xshash mahsulotlar</SectionTitle>
             <div className="grid grid-cols-1 gap-[16px] sm:grid-cols-2 lg:grid-cols-4">
               {similarProducts.map((similarProduct) => (
@@ -172,8 +174,8 @@ export const ProductDetailPage = () => {
                   </div>
                   <div className="px-[14px] py-[12px]">
                     <h4 className="mb-[6px] text-[14px] font-semibold text-[#222222]">{similarProduct.name}</h4>
-                    <p className="text-[11px] text-[#666666]">{similarProduct.specs[0]?.label}: {similarProduct.specs[0]?.value}</p>
-                    <p className="text-[11px] text-[#666666]">{similarProduct.specs[1]?.label}: {similarProduct.specs[1]?.value}</p>
+                    <p className="text-[12px] text-[#666666]">{similarProduct.specs[0]?.label}: {similarProduct.specs[0]?.value}</p>
+                    <p className="text-[12px] text-[#666666]">{similarProduct.specs[1]?.label}: {similarProduct.specs[1]?.value}</p>
                   </div>
                 </Link>
               ))}
@@ -184,3 +186,4 @@ export const ProductDetailPage = () => {
     </>
   );
 };
+

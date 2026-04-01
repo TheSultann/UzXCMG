@@ -9,7 +9,7 @@ export const ServicePage = () => {
       <PageHeroBanner title="SERVIS" />
 
       <section className="bg-white py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <SectionTitle>Servis</SectionTitle>
 
           <div className="grid grid-cols-1 gap-[16px] md:grid-cols-3 md:gap-[24px]">
@@ -51,3 +51,4 @@ export const ServicePage = () => {
     </>
   );
 };
+

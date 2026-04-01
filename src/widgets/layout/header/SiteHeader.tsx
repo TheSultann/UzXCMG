@@ -47,7 +47,7 @@ export const SiteHeader = () => {
 
   return (
     <header className="relative z-50 w-full border-b-2 border-[#0f5db8] bg-white">
-      <div className="mx-auto w-full max-w-[1238px] px-0">
+      <div className="mx-auto w-full max-w-[1440px] px-0">
         <div className="flex h-[46px] w-full items-stretch justify-between md:h-[52px]">
           <BrandLogo
             className="h-full w-[143px] border-r border-[#d8d8d8] pl-[14px]"
@@ -59,7 +59,7 @@ export const SiteHeader = () => {
               <div key={item.label} className="group relative flex h-full items-center">
                 <Link
                   to={item.href}
-                  className={`flex items-center gap-1 text-[11px] font-medium transition-colors hover:text-[#0f5db8] ${
+                  className={`flex items-center gap-1 text-[14px] font-medium transition-colors hover:text-[#0f5db8] ${
                     isActive(item.href) ? 'text-[#0f5db8]' : 'text-[#2f2f2f]'
                   }`}
                 >
@@ -73,7 +73,7 @@ export const SiteHeader = () => {
                       <Link
                         key={child.label}
                         to={child.href}
-                        className="px-4 py-2 text-[11px] text-gray-600 hover:bg-gray-50 hover:text-[#0f5db8]"
+                        className="px-4 py-2 text-[14px] text-gray-600 hover:bg-gray-50 hover:text-[#0f5db8]"
                       >
                         {child.label}
                       </Link>
@@ -102,7 +102,7 @@ export const SiteHeader = () => {
               })}
             </div>
 
-            <button className="hidden h-[22px] w-[76px] self-center items-center justify-center gap-[5px] border-l border-[#d8d8d8] px-0 text-[10px] font-normal text-[#2c2c2c] md:flex">
+            <button className="hidden h-[22px] w-[76px] self-center items-center justify-center gap-[5px] border-l border-[#d8d8d8] px-0 text-[12px] font-normal text-[#2c2c2c] md:flex">
               <Globe className="h-[13px] w-[13px]" strokeWidth={1.9} />
               UZ
               <ChevronDown className="h-[11px] w-[11px]" strokeWidth={1.75} />
@@ -113,7 +113,7 @@ export const SiteHeader = () => {
               className="ml-[8px] hidden h-[46px] w-[202px] self-center items-center justify-center gap-[6px] bg-[#2e2e2e] px-[12px] text-white transition-colors hover:bg-black sm:flex"
             >
               <Phone className="h-[12px] w-[12px]" strokeWidth={2.1} />
-              <span className="text-[10px] font-medium leading-none">{contactPhone.label}</span>
+              <span className="text-[12px] font-medium leading-none">{contactPhone.label}</span>
             </a>
 
             <button
@@ -135,7 +135,7 @@ export const SiteHeader = () => {
 
       {mobileMenuOpen && (
         <div className="absolute left-0 top-full w-full border-t border-gray-100 bg-white shadow-[0_22px_40px_rgba(15,20,28,0.12)] lg:hidden">
-          <div className="mx-auto max-h-[calc(100vh-46px)] max-w-[1238px] overflow-y-auto px-4 py-4">
+          <div className="mx-auto max-h-[calc(100vh-46px)] max-w-[1440px] overflow-y-auto px-4 py-4">
             <a
               href={contactPhone.href}
               className="mb-4 flex h-[42px] w-full items-center justify-center gap-[6px] bg-[#2e2e2e] text-[12px] font-semibold text-white sm:hidden"
@@ -218,3 +218,4 @@ export const SiteHeader = () => {
     </header>
   );
 };
+

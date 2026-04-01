@@ -50,7 +50,7 @@ export const AboutPage = () => {
       <section className="relative overflow-hidden bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.06),transparent_40%),linear-gradient(180deg,rgba(17,17,17,0.98),rgba(20,20,20,1))] px-4 py-[56px] text-white sm:px-5 lg:px-6">
         <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(transparent_95%,rgba(255,255,255,0.06)_95%),linear-gradient(90deg,transparent_95%,rgba(255,255,255,0.04)_95%)] bg-[length:80px_80px] opacity-[0.18]" />
 
-        <div className="relative z-10 mx-auto w-full max-w-[1238px]">
+        <div className="relative z-10 mx-auto w-full max-w-[1440px]">
           <div className="mb-[28px] flex items-center gap-[8px]">
             <span className="h-[28px] w-[5px] bg-[#f3c316]" />
             <h2 className="text-[20px] font-semibold text-white md:text-[34px]">
@@ -102,7 +102,7 @@ export const AboutPage = () => {
       </section>
 
       <section className="px-4 py-[68px] sm:px-5 lg:px-6 lg:py-[84px]">
-        <div className="mx-auto w-full max-w-[1238px]">
+        <div className="mx-auto w-full max-w-[1440px]">
           <div className="mb-10 max-w-[680px]">
             <p className="mb-3 text-[0.84rem] font-bold uppercase tracking-[0.28em] text-[#9a7a04]">Korxona tarixi</p>
             <h2 className="text-[clamp(2rem,4vw,3.2rem)] leading-none font-bold tracking-[-0.05em] text-[#151515]">
@@ -140,3 +140,4 @@ export const AboutPage = () => {
     </main>
   )
 }
+

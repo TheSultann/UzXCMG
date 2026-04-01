@@ -108,7 +108,7 @@ export const NewsPage = () => {
               <h3 className="mb-[10px] text-[18px] leading-[1.18] font-bold text-[#303030] sm:text-[20px] md:text-[22px]">
                 {featuredArticle.title}
               </h3>
-              <p className="text-[13px] leading-[1.65] text-[#666666] md:text-[11px]">
+              <p className="text-[14px] leading-[1.75] text-[#666666] md:text-[15px]">
                 {featuredArticle.content}
               </p>
             </div>
@@ -129,14 +129,30 @@ export const NewsPage = () => {
                 </div>
 
                 <div className="px-[12px] pb-[12px] pt-[10px] sm:px-[10px] sm:pb-[10px] sm:pt-[8px] lg:px-[8px] lg:pb-[10px] lg:pt-[6px]">
-                  <div className="mb-[7px] flex items-center gap-[4px] text-[10px] leading-none text-[#9a9a9a] sm:text-[9px] lg:text-[8px]">
-                    <Clock3 className="h-[10px] w-[10px] sm:h-[9px] sm:w-[9px]" />
+                  <div className="mb-[7px] flex items-center gap-[4px] text-[12px] leading-none text-[#9a9a9a]">
+                    <Clock3 className="h-[12px] w-[12px]" />
                     {article.date}
                   </div>
-                  <h4 className="mb-[7px] text-[14px] font-semibold leading-[1.4] text-[#222222] sm:text-[12px] lg:text-[10px]">
+                  <h4
+                    className="mb-[7px] min-h-[2.9em] text-[16px] font-semibold leading-[1.45] text-[#222222]"
+                    style={{
+                      display: '-webkit-box',
+                      WebkitLineClamp: 2,
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                    }}
+                  >
                     {article.title}
                   </h4>
-                  <p className="text-[11px] leading-[1.5] text-[#777777] sm:text-[10px] lg:text-[8px]">
+                  <p
+                    className="min-h-[4.8em] text-[13px] leading-[1.6] text-[#777777]"
+                    style={{
+                      display: '-webkit-box',
+                      WebkitLineClamp: 3,
+                      WebkitBoxOrient: 'vertical',
+                      overflow: 'hidden',
+                    }}
+                  >
                     {article.excerpt}
                   </p>
                 </div>

@@ -29,7 +29,7 @@ export const CertificatesPage = () => {
       <PageHeroBanner title={getTabTitle().toUpperCase()} />
 
       <section className="bg-white py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <div className="mb-[40px] flex flex-wrap gap-[8px]">
             {tabs.map((tab) => (
               <button
@@ -63,8 +63,8 @@ export const CertificatesPage = () => {
                       </div>
                     </div>
                     <div className="w-full text-left">
-                      <p className="mb-[6px] text-[11px] text-[#888888]">{cert.date}</p>
-                      <h4 className="text-[12px] font-semibold leading-[1.4] text-[#222222]">{cert.title}</h4>
+                      <p className="mb-[6px] text-[12px] text-[#888888]">{cert.date}</p>
+                      <h4 className="text-[14px] font-semibold leading-[1.5] text-[#222222]">{cert.title}</h4>
                     </div>
                   </div>
                 ))}
@@ -88,3 +88,4 @@ export const CertificatesPage = () => {
     </main>
   )
 }
+

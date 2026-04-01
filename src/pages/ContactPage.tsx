@@ -57,7 +57,7 @@ export const ContactPage = () => {
       <PageHeroBanner title="Aloqa" />
 
       <section className="bg-white py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <SectionTitle>Aloqa</SectionTitle>
 
           <div className="mb-[32px] grid gap-[24px] lg:grid-cols-2">
@@ -86,7 +86,7 @@ export const ContactPage = () => {
                 {dealers.map((dealer) => (
                   <div key={dealer.name} className="border-b border-[#eeeeee] pb-[16px] transition-transform duration-300 hover:translate-x-[2px]">
                     <h4 className="mb-[6px] text-[14px] font-semibold text-[#333333]">{dealer.name}</h4>
-                    <p className="mb-[4px] flex items-center gap-[6px] text-[12px] text-[#666666]">
+                    <p className="mb-[4px] flex items-center gap-[6px] text-[13px] text-[#666666]">
                       <MapPin className="h-[12px] w-[12px] shrink-0 text-[#0f5db8]" strokeWidth={1.8} />
                       {dealer.address}
                     </p>
@@ -95,7 +95,7 @@ export const ContactPage = () => {
                         <a
                           key={phone}
                           href={`tel:${phone.replace(/[^+\d]/g, '')}`}
-                          className="flex items-center gap-[4px] text-[12px] text-[#555555] hover:text-[#0f5db8]"
+                          className="flex items-center gap-[4px] text-[13px] text-[#555555] hover:text-[#0f5db8]"
                         >
                           <Phone className="h-[11px] w-[11px] text-[#0f5db8]" strokeWidth={1.8} />
                           {phone}
@@ -105,7 +105,7 @@ export const ContactPage = () => {
                     {dealer.email && (
                       <a
                         href={`mailto:${dealer.email}`}
-                        className="mt-[4px] flex items-center gap-[4px] text-[12px] text-[#555555] hover:text-[#0f5db8]"
+                        className="mt-[4px] flex items-center gap-[4px] text-[13px] text-[#555555] hover:text-[#0f5db8]"
                       >
                         <Mail className="h-[11px] w-[11px] text-[#0f5db8]" strokeWidth={1.8} />
                         {dealer.email}
@@ -180,3 +180,4 @@ export const ContactPage = () => {
     </main>
   )
 }
+
