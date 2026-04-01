@@ -58,9 +58,9 @@ export const LeadershipDetailPage = () => {
                 ))}
               </div>
 
-              <div className="mt-[14px] inline-flex h-[28px] items-center gap-[6px] bg-[#2f2f2f] px-[10px] transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#1f1f1f] hover:shadow-[0_10px_18px_rgba(47,47,47,0.24)]">
-                <Phone className="h-[11px] w-[11px] text-white" strokeWidth={1.9} />
-                <span className="text-[11px] font-medium text-white">
+              <div className="mt-[16px] inline-flex h-[34px] items-center gap-[8px] bg-[#2f2f2f] px-[14px] transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#1f1f1f] hover:shadow-[0_10px_18px_rgba(47,47,47,0.24)] sm:h-[38px] sm:px-[16px]">
+                <Phone className="h-[13px] w-[13px] text-white sm:h-[14px] sm:w-[14px]" strokeWidth={1.9} />
+                <span className="text-[12px] font-medium text-white sm:text-[13px]">
                   Xizmat telefoni {leader.phone}
                 </span>
               </div>

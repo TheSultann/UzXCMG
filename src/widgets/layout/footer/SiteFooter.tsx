@@ -10,18 +10,18 @@ import {
 
 export const SiteFooter = () => {
   return (
-    <footer className="bg-[#1C1C1C] pb-6 pt-16 text-gray-300">
+    <footer className="bg-[#1C1C1C] pb-6 pt-10 text-gray-300 sm:pt-16">
       <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
-        <div className="mb-16 flex justify-center">
-          <BrandLogo withPlate imageClassName="h-10 w-auto object-contain" />
+        <div className="mb-10 flex justify-center sm:mb-16">
+          <BrandLogo withPlate imageClassName="h-8 w-auto object-contain sm:h-10" />
         </div>
 
-        <div className="mb-16 grid grid-cols-1 gap-8 md:grid-cols-3 lg:grid-cols-6">
+        <div className="mb-10 grid grid-cols-1 gap-6 sm:mb-16 sm:gap-8 md:grid-cols-3 lg:grid-cols-6">
           {footerLinkColumns.map((column) => (
             <div key={column.title} className="flex flex-col gap-4">
-              <h3 className="mb-2 font-medium text-white">{column.title}</h3>
+              <h3 className="mb-1 text-[15px] font-medium text-white sm:mb-2">{column.title}</h3>
               {column.links.map((link) => (
-                <Link key={link.label} to={link.href} className="text-sm transition-colors hover:text-white">
+                <Link key={link.label} to={link.href} className="text-[13px] transition-colors hover:text-white sm:text-sm">
                   {link.label}
                 </Link>
               ))}
@@ -29,26 +29,26 @@ export const SiteFooter = () => {
           ))}
 
           <div className="flex flex-col gap-4">
-            <h3 className="mb-2 font-medium text-white">Bog'lanish</h3>
+            <h3 className="mb-1 text-[15px] font-medium text-white sm:mb-2">Bog'lanish</h3>
             {footerPhones.map((phone) => (
-              <a key={phone.label} href={phone.href} className="flex items-center gap-2 text-sm hover:text-white">
+              <a key={phone.label} href={phone.href} className="flex items-center gap-2 text-[13px] hover:text-white sm:text-sm">
                 <Phone className="h-4 w-4" /> {phone.label}
               </a>
             ))}
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3 className="mb-2 font-medium text-white">Elektron pochta</h3>
+            <h3 className="mb-1 text-[15px] font-medium text-white sm:mb-2">Elektron pochta</h3>
             {footerEmails.map((email) => (
-              <a key={email.label} href={email.href} className="flex items-center gap-2 text-sm hover:text-white">
+              <a key={email.label} href={email.href} className="flex items-center gap-2 text-[13px] hover:text-white sm:text-sm">
                 <Mail className="h-4 w-4" /> {email.label}
               </a>
             ))}
           </div>
 
           <div className="flex flex-col gap-4">
-            <h3 className="mb-2 font-medium text-white">Manzil</h3>
-            <div className="flex items-start gap-2 text-sm leading-relaxed">
+            <h3 className="mb-1 text-[15px] font-medium text-white sm:mb-2">Manzil</h3>
+            <div className="flex items-start gap-2 text-[13px] leading-relaxed sm:text-sm">
               <MapPin className="mt-0.5 h-5 w-5 shrink-0" />
               <span>{footerAddress}</span>
             </div>
