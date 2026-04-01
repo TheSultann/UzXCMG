@@ -1,7 +1,6 @@
 import { Clock3 } from 'lucide-react'
 import { PageHeroBanner } from '../shared/ui/PageHeroBanner'
 import { SectionTitle } from '../shared/ui/SectionTitle'
-
 import newsBanner from '../assets/news-banner.png'
 import newsFeaturedPort from '../assets/news-featured-port.png'
 import newsCardTrucks from '../assets/news-card-trucks.png'
@@ -92,24 +91,24 @@ export const NewsPage = () => {
     <main className="min-h-screen bg-[linear-gradient(180deg,#f5f1e8_0%,#ffffff_22%,#ffffff_100%)]">
       <PageHeroBanner title="Yangiliklar" />
 
-      <section className="bg-white py-[28px] md:py-[32px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+      <section className="bg-white py-[24px] sm:py-[32px]">
+        <div className="mx-auto w-full max-w-[1360px] px-4 sm:px-5 lg:px-6">
           <SectionTitle>Yangiliklar</SectionTitle>
 
-          <div className="mb-[12px] grid items-start gap-[8px] lg:grid-cols-[1.06fr_0.94fr]">
+          <div className="mb-[14px] grid items-start gap-[12px] lg:grid-cols-[1.06fr_0.94fr]">
             <div className="overflow-hidden border border-black/5 bg-[#f1f1f1] shadow-[0_18px_36px_rgba(17,17,17,0.06)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_44px_rgba(17,17,17,0.1)]">
               <img
                 src={featuredImage}
                 alt={featuredArticle.title}
-                className="h-[210px] w-full object-cover transition-transform duration-500 hover:scale-[1.04] md:h-[255px]"
+                className="h-[198px] w-full object-cover transition-transform duration-500 hover:scale-[1.04] sm:h-[210px] md:h-[255px]"
               />
             </div>
 
-            <div className="border border-black/5 bg-white p-[18px] shadow-[0_18px_36px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_44px_rgba(17,17,17,0.08)]">
-              <h3 className="mb-[10px] text-[22px] leading-[1.18] font-bold text-[#303030]">
+            <div className="border border-black/5 bg-white p-[14px] shadow-[0_18px_36px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[4px] hover:shadow-[0_22px_44px_rgba(17,17,17,0.08)] sm:p-[18px]">
+              <h3 className="mb-[10px] text-[18px] leading-[1.18] font-bold text-[#303030] sm:text-[20px] md:text-[22px]">
                 {featuredArticle.title}
               </h3>
-              <p className="text-[11px] leading-[1.55] text-[#666666]">
+              <p className="text-[13px] leading-[1.65] text-[#666666] md:text-[11px]">
                 {featuredArticle.content}
               </p>
             </div>
@@ -121,7 +120,7 @@ export const NewsPage = () => {
                 key={article.id}
                 className="group overflow-hidden border border-black/5 bg-[#f5f5f5] shadow-[0_14px_30px_rgba(17,17,17,0.04)] transition-all duration-300 hover:-translate-y-[2px] hover:shadow-[0_18px_34px_rgba(17,17,17,0.08)]"
               >
-                <div className="h-[132px] overflow-hidden bg-white">
+                <div className="h-[176px] overflow-hidden bg-white sm:h-[150px] lg:h-[132px]">
                   <img
                     src={article.image}
                     alt={article.title}
@@ -129,15 +128,15 @@ export const NewsPage = () => {
                   />
                 </div>
 
-                <div className="px-[8px] pb-[10px] pt-[6px]">
-                  <div className="mb-[6px] flex items-center gap-[4px] text-[8px] leading-none text-[#9a9a9a]">
-                    <Clock3 className="h-[9px] w-[9px]" />
+                <div className="px-[12px] pb-[12px] pt-[10px] sm:px-[10px] sm:pb-[10px] sm:pt-[8px] lg:px-[8px] lg:pb-[10px] lg:pt-[6px]">
+                  <div className="mb-[7px] flex items-center gap-[4px] text-[10px] leading-none text-[#9a9a9a] sm:text-[9px] lg:text-[8px]">
+                    <Clock3 className="h-[10px] w-[10px] sm:h-[9px] sm:w-[9px]" />
                     {article.date}
                   </div>
-                  <h4 className="mb-[6px] text-[10px] font-semibold leading-[1.45] text-[#222222]">
+                  <h4 className="mb-[7px] text-[14px] font-semibold leading-[1.4] text-[#222222] sm:text-[12px] lg:text-[10px]">
                     {article.title}
                   </h4>
-                  <p className="text-[8px] leading-[1.45] text-[#777777]">
+                  <p className="text-[11px] leading-[1.5] text-[#777777] sm:text-[10px] lg:text-[8px]">
                     {article.excerpt}
                   </p>
                 </div>
