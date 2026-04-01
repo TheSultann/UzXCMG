@@ -93,7 +93,7 @@ export const ServiceMaintenancePage = () => {
       <PageHeroBanner title="XIZMAT KO'RSATISH" />
 
       <section className="bg-white py-[38px] md:py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <SectionTitle>Xizmat ko&apos;rsatish</SectionTitle>
 
           <div className="grid gap-[8px] md:grid-cols-2 xl:grid-cols-4">
@@ -112,7 +112,7 @@ export const ServiceMaintenancePage = () => {
                   <h3 className="mb-[10px] text-[15px] font-semibold leading-[1.35] text-[#232323] transition-colors duration-300 group-hover:text-black">
                     {card.title}
                   </h3>
-                  <p className="text-[11px] leading-[1.65] text-[#666666]">{card.description}</p>
+                  <p className="text-[14px] leading-[1.7] text-[#666666]">{card.description}</p>
                 </div>
               );
             })}
@@ -133,10 +133,10 @@ export const ServiceMaintenancePage = () => {
                     <div className="mb-[16px] flex h-[42px] w-[42px] items-center justify-center bg-[#232323] text-[#f3c316] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_12px_22px_rgba(0,0,0,0.18)]">
                       <Icon className="h-[18px] w-[18px] transition-transform duration-300 group-hover:rotate-[-8deg]" strokeWidth={1.9} />
                     </div>
-                    <h3 className="mb-[8px] text-[12px] font-semibold leading-[1.35] text-[#202020] transition-colors duration-300 group-hover:text-black">
+                    <h3 className="mb-[8px] text-[13px] font-semibold leading-[1.4] text-[#202020] transition-colors duration-300 group-hover:text-black">
                       {item.title}
                     </h3>
-                    <p className="text-[10px] leading-[1.45] text-[#666666]">{item.description}</p>
+                    <p className="text-[13px] leading-[1.6] text-[#666666]">{item.description}</p>
                   </div>
                 );
               })}
@@ -161,10 +161,10 @@ export const ServiceMaintenancePage = () => {
                     {index < processSteps.length - 1 ? (
                       <div className="absolute left-[calc(50%+28px)] top-[20px] hidden h-[1px] w-[calc(100%-56px)] bg-[#7d7d7d] md:block" />
                     ) : null}
-                    <h3 className="mb-[8px] text-[12px] font-semibold leading-[1.35] text-[#202020]">
+                    <h3 className="mb-[8px] text-[13px] font-semibold leading-[1.4] text-[#202020]">
                       {step.title}
                     </h3>
-                    <p className="max-w-[200px] text-[10px] leading-[1.45] text-[#666666]">{step.description}</p>
+                    <p className="max-w-[220px] text-[13px] leading-[1.55] text-[#666666]">{step.description}</p>
                   </div>
                 );
               })}
@@ -173,7 +173,7 @@ export const ServiceMaintenancePage = () => {
 
           <div className="mt-[54px] flex flex-col items-center">
             <SectionTitle>Xizmat so&apos;rovi</SectionTitle>
-            <p className="mb-[16px] text-center text-[11px] text-[#7a7a7a]">
+            <p className="mb-[16px] text-center text-[13px] text-[#7a7a7a]">
               Shaklni to&apos;ldiring va bizning jamoamiz sizga tez orada javob beradi
             </p>
 
@@ -183,12 +183,12 @@ export const ServiceMaintenancePage = () => {
                   <input
                     type="text"
                     placeholder="F.I.O"
-                    className="h-[28px] border border-[#d7d7d7] px-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                    className="h-[36px] border border-[#d7d7d7] px-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
                   />
                   <input
                     type="text"
                     placeholder="Telefon raqam"
-                    className="h-[28px] border border-[#d7d7d7] px-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                    className="h-[36px] border border-[#d7d7d7] px-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
                   />
                 </div>
 
@@ -196,9 +196,9 @@ export const ServiceMaintenancePage = () => {
                   <input
                     type="text"
                     placeholder="Uskuna modeli"
-                    className="h-[28px] border border-[#d7d7d7] px-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                    className="h-[36px] border border-[#d7d7d7] px-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
                   />
-                  <select className="h-[28px] border border-[#d7d7d7] px-[8px] text-[11px] text-[#6b6b6b] outline-none focus:border-[#f3c316]">
+                  <select className="h-[36px] border border-[#d7d7d7] px-[10px] text-[13px] text-[#6b6b6b] outline-none focus:border-[#f3c316]">
                     <option>Xizmat turi</option>
                     <option>Diagnostika</option>
                     <option>Ta&apos;mirlash</option>
@@ -209,12 +209,12 @@ export const ServiceMaintenancePage = () => {
                 <textarea
                   rows={5}
                   placeholder="Qo'shimcha izoh"
-                  className="w-full border border-[#d7d7d7] px-[8px] py-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                  className="w-full border border-[#d7d7d7] px-[10px] py-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
                 />
 
                 <button
                   type="button"
-                  className="h-[30px] w-full bg-[#f3c316] text-[11px] font-semibold text-black transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#ffd42b] hover:shadow-[0_10px_18px_rgba(243,195,22,0.28)]"
+                  className="h-[38px] w-full bg-[#f3c316] text-[13px] font-semibold text-black transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#ffd42b] hover:shadow-[0_10px_18px_rgba(243,195,22,0.28)]"
                 >
                   Yuborish
                 </button>
@@ -226,3 +226,4 @@ export const ServiceMaintenancePage = () => {
     </>
   );
 };
+

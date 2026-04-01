@@ -47,7 +47,7 @@ export const ProductsPage = () => {
       <PageHeroBanner title="Bizning mahsulotlar" />
 
       <section className="bg-white py-[28px] sm:py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <SectionTitle>Mahsulotlar</SectionTitle>
 
           <div className="grid grid-cols-1 gap-[10px] min-[960px]:grid-cols-2 xl:grid-cols-4">
@@ -141,3 +141,4 @@ export const ProductsPage = () => {
     </>
   );
 };
+

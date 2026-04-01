@@ -80,7 +80,7 @@ export const SparePartsPage = () => {
           <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(10,10,10,0.72)_0%,rgba(10,10,10,0.58)_100%)]" />
         </div>
 
-        <div className="relative mx-auto flex min-h-[182px] w-full max-w-[1238px] items-center justify-center px-4 py-[28px] sm:px-5 lg:px-6">
+        <div className="relative mx-auto flex min-h-[182px] w-full max-w-[1440px] items-center justify-center px-4 py-[28px] sm:px-5 lg:px-6">
           <h1 className="text-center text-[28px] font-black uppercase tracking-[-0.04em] text-white md:text-[46px]">
             EHTIYOT QISMLAR
           </h1>
@@ -88,7 +88,7 @@ export const SparePartsPage = () => {
       </section>
 
       <section className="bg-white py-[38px] md:py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <SectionTitle>Ehtiyot qismlar</SectionTitle>
 
           <div className="mx-auto grid max-w-[940px] grid-cols-1 gap-[8px] sm:grid-cols-2 lg:grid-cols-6">
@@ -129,10 +129,10 @@ export const SparePartsPage = () => {
                     <div className="mb-[16px] flex h-[42px] w-[42px] items-center justify-center bg-[#202020] text-[#f3c316] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_12px_22px_rgba(0,0,0,0.18)]">
                       <Icon className="h-[18px] w-[18px] transition-transform duration-300 group-hover:rotate-[-8deg]" strokeWidth={1.9} />
                     </div>
-                    <h3 className="mb-[8px] text-[12px] font-semibold leading-[1.35] text-[#222222] transition-colors duration-300 group-hover:text-black">
+                    <h3 className="mb-[8px] text-[13px] font-semibold leading-[1.4] text-[#222222] transition-colors duration-300 group-hover:text-black">
                       {item.title}
                     </h3>
-                    <p className="text-[10px] leading-[1.45] text-[#666666]">{item.description}</p>
+                    <p className="text-[13px] leading-[1.6] text-[#666666]">{item.description}</p>
                   </div>
                 );
               })}
@@ -142,7 +142,7 @@ export const SparePartsPage = () => {
       </section>
 
       <section className="bg-[#232323] py-[32px] text-white">
-        <div className="mx-auto grid w-full max-w-[1238px] gap-[28px] px-4 sm:px-5 lg:grid-cols-[1.08fr_0.92fr] lg:px-6">
+        <div className="mx-auto grid w-full max-w-[1440px] gap-[28px] px-4 sm:px-5 lg:grid-cols-[1.08fr_0.92fr] lg:px-6">
           <div className="max-w-[470px]">
             <h2 className="text-[22px] font-semibold leading-[1.2] text-white">
               Ehtiyot qismlar bo&apos;yicha
@@ -150,14 +150,14 @@ export const SparePartsPage = () => {
             <p className="mt-[2px] text-[34px] font-bold leading-none text-[#f3c316]">
               so&apos;rov yuboring
             </p>
-            <p className="mt-[18px] max-w-[390px] text-[12px] leading-[1.7] text-white/70">
+            <p className="mt-[18px] max-w-[390px] text-[14px] leading-[1.75] text-white/70">
               Quyidagi shaklni to&apos;ldiring va sizga ehtiyot qismlar haqida malakali
               mutaxassislarimiz qisqa muddat ichida batafsil ma&apos;lumot beradi.
             </p>
 
             <div className="mt-[18px] space-y-[10px]">
               {featureList.map((item) => (
-                <div key={item} className="group flex items-start gap-[8px] text-[12px] text-white/80 transition-colors duration-300 hover:text-white">
+                <div key={item} className="group flex items-start gap-[8px] text-[13px] text-white/80 transition-colors duration-300 hover:text-white">
                   <span className="mt-[4px] h-[8px] w-[8px] rounded-full border border-[#f3c316] transition-all duration-300 group-hover:scale-125 group-hover:bg-[#f3c316]" />
                   <span>{item}</span>
                 </div>
@@ -173,36 +173,36 @@ export const SparePartsPage = () => {
                 <input
                   type="text"
                   placeholder="Ism"
-                  className="h-[28px] border border-[#d6d6d6] px-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                  className="h-[36px] border border-[#d6d6d6] px-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
                 />
                 <input
                   type="tel"
                   placeholder="Telefon raqam"
-                  className="h-[28px] border border-[#d6d6d6] px-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                  className="h-[36px] border border-[#d6d6d6] px-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
                 />
               </div>
 
               <input
                 type="text"
                 placeholder="Ehtiyot qism nomi"
-                className="h-[28px] w-full border border-[#d6d6d6] px-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                className="h-[36px] w-full border border-[#d6d6d6] px-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
               />
 
               <input
                 type="text"
                 placeholder="Ehtiyot qism kodi"
-                className="h-[28px] w-full border border-[#d6d6d6] px-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                className="h-[36px] w-full border border-[#d6d6d6] px-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
               />
 
               <textarea
                 rows={5}
                 placeholder="Qo'shimcha izoh"
-                className="w-full border border-[#d6d6d6] px-[8px] py-[8px] text-[11px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
+                className="w-full border border-[#d6d6d6] px-[10px] py-[10px] text-[13px] outline-none placeholder:text-[#8b8b8b] focus:border-[#f3c316]"
               />
 
                 <button
                   type="button"
-                  className="h-[32px] w-full bg-[#f3c316] text-[11px] font-semibold text-black transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#ffd42b] hover:shadow-[0_10px_18px_rgba(243,195,22,0.28)]"
+                  className="h-[38px] w-full bg-[#f3c316] text-[13px] font-semibold text-black transition-all duration-300 hover:-translate-y-[1px] hover:bg-[#ffd42b] hover:shadow-[0_10px_18px_rgba(243,195,22,0.28)]"
                 >
                   Yuborish
                 </button>
@@ -213,3 +213,4 @@ export const SparePartsPage = () => {
     </>
   );
 };
+

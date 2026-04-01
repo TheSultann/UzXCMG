@@ -47,7 +47,7 @@ export const PartnersSection = () => {
         }
       `}</style>
 
-      <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
         <div className="mb-[24px] flex items-center justify-center gap-[10px]">
           <span className="h-[33px] w-[6px] bg-[#f3c316]"></span>
           <h2 className="text-[23px] font-bold tracking-[-0.35px] text-[#2d2d2d] sm:text-[31px] sm:tracking-[-0.5px]">
@@ -80,3 +80,4 @@ export const PartnersSection = () => {
     </section>
   );
 };
+

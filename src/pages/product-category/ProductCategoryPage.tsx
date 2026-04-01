@@ -83,11 +83,11 @@ export const ProductCategoryPage = () => {
       <PageHeroBanner title="Bizning mahsulotlar" />
 
       <section className="bg-white py-[28px] sm:py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <SectionTitle centered={false}>{title}</SectionTitle>
 
           <div className="mb-[16px] rounded-[22px] border border-[#eceff3] bg-[#fbfcfd] p-[12px] lg:hidden">
-            <p className="mb-[10px] text-[11px] font-semibold tracking-[0.14em] text-[#8491a7] uppercase">Boshqa kategoriyalar</p>
+            <p className="mb-[10px] text-[12px] font-semibold tracking-[0.14em] text-[#8491a7] uppercase">Boshqa kategoriyalar</p>
             <div className="flex flex-wrap gap-[8px]">
               {mobileCategoryLinks.map((item) => (
                 <Link
@@ -107,8 +107,8 @@ export const ProductCategoryPage = () => {
 
           <div className="mb-[24px] border border-[#eceff3] bg-white p-[12px] shadow-[0_12px_28px_rgba(17,17,17,0.04)]">
             <div className="mb-[10px] flex items-center justify-between gap-[12px]">
-              <p className="text-[11px] font-semibold tracking-[0.14em] text-[#8491a7] uppercase">Yo'nalishlar</p>
-              <span className="text-[11px] font-medium text-[#8491a7]">{tabs.length} ta yo'nalish</span>
+              <p className="text-[12px] font-semibold tracking-[0.14em] text-[#8491a7] uppercase">Yo'nalishlar</p>
+              <span className="text-[12px] font-medium text-[#8491a7]">{tabs.length} ta yo'nalish</span>
             </div>
             <div className="flex flex-wrap gap-[8px]">
               {tabs.map((tab, i) => (
@@ -116,7 +116,7 @@ export const ProductCategoryPage = () => {
                   key={tab.id}
                   type="button"
                   onClick={() => setTabSelection({ category, index: i })}
-                  className={`max-w-full px-[14px] py-[8px] text-left text-[11px] leading-[1.35] font-medium transition-all duration-300 sm:px-[16px] sm:text-[12px] ${
+                  className={`max-w-full px-[14px] py-[8px] text-left text-[12px] leading-[1.4] font-medium transition-all duration-300 sm:px-[16px] sm:text-[13px] ${
                     activeTab === i
                       ? 'bg-[#1f3553] text-white shadow-[0_12px_22px_rgba(31,53,83,0.18)]'
                       : 'border border-[#d8dfe7] bg-[#fbfcfd] text-[#334155] hover:-translate-y-[1px] hover:border-[#0f5db8] hover:text-[#0f5db8]'
@@ -152,7 +152,7 @@ export const ProductCategoryPage = () => {
                         {isActive && hasSubs && (
                           <div className="bg-[#fafafa] px-[16px] py-[8px]">
                             {hasSubs.map((sub, i) => (
-                              <label key={sub.id} className="flex items-center gap-[8px] py-[5px] text-[11px] text-[#555555] cursor-pointer hover:text-[#0f5db8]">
+                              <label key={sub.id} className="flex cursor-pointer items-center gap-[8px] py-[5px] text-[12px] text-[#555555] hover:text-[#0f5db8]">
                                 <input type="checkbox" defaultChecked={i === 0} className="h-[13px] w-[13px] accent-[#0f5db8]" />
                                 {sub.label}
                               </label>
@@ -175,7 +175,7 @@ export const ProductCategoryPage = () => {
                 >
                   <div className="relative flex h-[192px] items-center justify-center overflow-hidden bg-[linear-gradient(180deg,#fbfbfb_0%,#f2f5f8_100%)] p-[16px] sm:h-[208px] sm:p-[18px]">
                     <div className="pointer-events-none absolute inset-x-[18px] bottom-[10px] h-[38px] rounded-full bg-[radial-gradient(circle_at_center,rgba(15,93,184,0.16),transparent_72%)] opacity-80" />
-                    <span className="absolute left-[14px] top-[14px] rounded-full border border-[#dfe7f1] bg-white/95 px-[10px] py-[5px] text-[10px] font-semibold tracking-[0.08em] text-[#0f5db8] uppercase">
+                    <span className="absolute left-[14px] top-[14px] rounded-full border border-[#dfe7f1] bg-white/95 px-[10px] py-[5px] text-[12px] font-semibold tracking-[0.08em] text-[#0f5db8] uppercase">
                       {product.badge}
                     </span>
                     <img
@@ -188,9 +188,9 @@ export const ProductCategoryPage = () => {
                     <div className="mb-[12px] flex items-start justify-between gap-[10px]">
                       <div className="min-w-0">
                         <h3 className="break-words text-[16px] font-semibold text-[#1f2937] sm:text-[17px]">{product.name}</h3>
-                        <p className="mt-[4px] text-[11px] font-medium tracking-[0.14em] text-[#8a94a6] uppercase">{title}</p>
+                        <p className="mt-[4px] text-[12px] font-medium tracking-[0.14em] text-[#8a94a6] uppercase">{title}</p>
                       </div>
-                      <span className="rounded-full bg-[#f3f6fa] px-[8px] py-[5px] text-[10px] font-medium text-[#5d6b7d]">
+                      <span className="rounded-full bg-[#f3f6fa] px-[8px] py-[5px] text-[12px] font-medium text-[#5d6b7d]">
                         XCMG
                       </span>
                     </div>
@@ -198,8 +198,8 @@ export const ProductCategoryPage = () => {
                     <div className="grid grid-cols-2 gap-[8px]">
                       {product.specs.map((spec) => (
                         <div key={spec.label} className="rounded-[16px] bg-[#f8fafc] px-[10px] py-[9px]">
-                          <p className="text-[10px] font-medium text-[#97a1af]">{spec.label}</p>
-                          <p className="mt-[3px] text-[12px] font-semibold text-[#233044]">{spec.value}</p>
+                          <p className="text-[12px] font-medium text-[#97a1af]">{spec.label}</p>
+                          <p className="mt-[3px] text-[13px] font-semibold text-[#233044]">{spec.value}</p>
                         </div>
                       ))}
                     </div>
@@ -220,3 +220,4 @@ export const ProductCategoryPage = () => {
     </>
   );
 };
+

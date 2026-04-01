@@ -11,7 +11,7 @@ const videos = Array.from({ length: 6 }, (_, index) => ({
 export const VideoPage = () => {
   return (
     <main className="min-h-screen bg-[linear-gradient(180deg,#f5f1e8_0%,#ffffff_22%,#ffffff_100%)] px-4 py-[18px] sm:px-5 lg:px-6">
-      <div className="mx-auto w-full max-w-[1238px]">
+      <div className="mx-auto w-full max-w-[1440px]">
         <SectionTitle>Vidyo</SectionTitle>
 
         <div className="grid gap-[10px] sm:grid-cols-2 lg:grid-cols-3">
@@ -40,7 +40,7 @@ export const VideoPage = () => {
                 </div>
 
                 <div className="absolute inset-x-[10px] bottom-[10px]">
-                  <p className="text-[11px] leading-[1.35] font-medium text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:translate-y-[-1px]">
+                  <p className="text-[13px] leading-[1.45] font-medium text-white drop-shadow-[0_1px_2px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:translate-y-[-1px]">
                     {video.title}
                   </p>
                 </div>
@@ -52,3 +52,4 @@ export const VideoPage = () => {
     </main>
   )
 }
+

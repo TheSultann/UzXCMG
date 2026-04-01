@@ -23,7 +23,7 @@ export const CompanyOverviewSection = () => {
         }}
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+      <div className="relative z-10 mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
         <div className="mb-4 flex items-center gap-2">
           <span className="h-6 w-[5px] bg-[#f3c316]"></span>
           <h2 className="text-[19px] font-bold sm:text-[22px]">Nima uchun bizni tanlash kerak</h2>
@@ -38,7 +38,7 @@ export const CompanyOverviewSection = () => {
             <h3 className="mb-3 text-[13px] font-semibold leading-[1.4] sm:text-[14px] sm:leading-[1.35]">
               Orta Osiyoda yagona bo'lgan maxsus texnikalarni ishlab chiquvchi qo'shma korxona
             </h3>
-            <div className="space-y-3 text-[11px] leading-[1.6] text-white/80">
+            <div className="space-y-3 text-[14px] leading-[1.7] text-white/80">
               <p>
                 "UzXCMG" qo'shma korxonasi O'zbekiston Respublikasi Prezidentining 2014-yil qaroriga
                 muvofiq tashkil etilgan bo'lib, og'ir va maxsus texnikalarni ishlab chiqarishga
@@ -59,7 +59,7 @@ export const CompanyOverviewSection = () => {
                 <div key={item.label} className="group flex min-h-[90px] flex-col justify-center border border-white/10 bg-[#161616] px-4 py-3 transition-all duration-300 hover:-translate-y-[4px] hover:bg-[#1b1b1b] hover:shadow-[0_18px_36px_rgba(0,0,0,0.2)] sm:min-h-[95px] sm:px-5 sm:py-4">
                   <Icon className="mb-3 h-6 w-6 text-white transition-transform duration-300 group-hover:scale-110" strokeWidth={1.8} />
                   <p className="text-[18px] font-bold leading-none text-[#f3c316] sm:text-[19px]">{item.value}</p>
-                  <p className="mt-2 text-[10px] text-white/75 sm:text-[11px]">{item.label}</p>
+                  <p className="mt-2 text-[12px] text-white/75 sm:text-[13px]">{item.label}</p>
                 </div>
               );
             })}
@@ -69,3 +69,4 @@ export const CompanyOverviewSection = () => {
     </section>
   );
 };
+

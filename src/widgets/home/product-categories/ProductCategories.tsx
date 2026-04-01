@@ -16,7 +16,7 @@ const productLinks = {
 export const ProductCategories = () => {
   return (
     <section id="products" className="bg-white pb-[48px] pt-[6px]">
-      <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
         <div className="mb-[22px] flex items-center justify-center gap-[9px]">
           <span className="h-[26px] w-[6px] bg-[#f3c316]"></span>
           <h2 className="text-[23px] font-bold tracking-[-0.3px] text-[#2d2d2d] sm:text-[27px]">
@@ -140,3 +140,4 @@ export const ProductCategories = () => {
     </section>
   );
 };
+

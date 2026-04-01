@@ -48,7 +48,7 @@ export const NewsFeedSection = ({
 
   return (
     <section id={sectionId} className="bg-white py-8 sm:py-10">
-      <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+      <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
         <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-2">
             <span className="h-6 w-[5px] bg-[#f3c316]"></span>
@@ -76,7 +76,7 @@ export const NewsFeedSection = ({
             </button>
             <Link
               to="/news"
-              className="ml-1 inline-flex h-[40px] flex-1 items-center justify-center bg-[#2d2d2d] px-[18px] text-[11px] font-semibold uppercase tracking-[0.04em] text-white transition-all duration-300 hover:-translate-y-[1px] hover:bg-black hover:shadow-[0_12px_20px_rgba(45,45,45,0.22)] sm:flex-none"
+              className="ml-1 inline-flex h-[40px] flex-1 items-center justify-center bg-[#2d2d2d] px-[18px] text-[12px] font-semibold uppercase tracking-[0.04em] text-white transition-all duration-300 hover:-translate-y-[1px] hover:bg-black hover:shadow-[0_12px_20px_rgba(45,45,45,0.22)] sm:flex-none"
             >
               Barcha yangiliklar
             </Link>
@@ -105,14 +105,32 @@ export const NewsFeedSection = ({
                   />
 
                   <div className="px-4 pb-4 pt-3">
-                    <div className="mb-3 flex items-center gap-1.5 text-[11px] text-[#7a7a7a]">
+                    <div className="mb-3 flex items-center gap-1.5 text-[12px] text-[#7a7a7a]">
                       <Clock3 className="h-[12px] w-[12px]" />
                       {item.date}
                     </div>
-                    <h3 className="mb-3 text-[15px] font-medium leading-[1.45] text-[#222222] sm:text-[16px]">
+                    <h3
+                      className="mb-3 min-h-[2.9em] text-[15px] font-medium leading-[1.45] text-[#222222] sm:text-[16px]"
+                      style={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                      }}
+                    >
                       {item.title}
                     </h3>
-                    <p className="text-[12px] leading-[1.55] text-[#666666] sm:text-[13px]">{item.excerpt}</p>
+                    <p
+                      className="min-h-[4.95em] text-[14px] leading-[1.65] text-[#666666]"
+                      style={{
+                        display: '-webkit-box',
+                        WebkitLineClamp: 3,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
+                      }}
+                    >
+                      {item.excerpt}
+                    </p>
                   </div>
                 </Link>
               </div>
@@ -123,3 +141,4 @@ export const NewsFeedSection = ({
     </section>
   );
 };
+

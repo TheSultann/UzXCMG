@@ -163,7 +163,7 @@ export const MediaPage = () => {
       <PageHeroBanner title="Mediya" />
 
       <section className="bg-white py-[36px] md:py-[42px]">
-        <div className="mx-auto w-full max-w-[1238px] px-4 sm:px-5 lg:px-6">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 lg:px-6">
           <SectionTitle>Mediya</SectionTitle>
         </div>
 
@@ -188,3 +188,4 @@ export const MediaPage = () => {
     </main>
   )
 }
+
